@@ -1,0 +1,18 @@
+Variante,Gen,Enfermedad,Patogenicidad,Reviews
+Ex24:p.F508del,CFTR,Cystic fibrosis,P,review01
+Ex66:c.10515C>A,e4345,Disease1,LP,review02
+Ex7:c.489T>G,we523,Disease2,B,review03
+Ex12:c.1242C>T,CFTR,Cystic fibrosis,P,review04
+Ex31:c.6478G>A,brrw4,Disease3,US,review05
+Ex37:c.6678A>G,4534f,Disease4,US,review06
+Ex14:c.1222C>T,34t5gf5,Disease5,LB,review07
+Ex66:c.544A>C,g543,Disease6,B,review08
+IVS31:c.8047-15C>T,KMT2D (MLL2),Kabuki syndrome,B,review09
+IVS2:c.56G>C,dg5w2,Disease4,LB,review10
+Ex2:c.774T>C,545g,Disease7,B,review11
+Ex4:c.845G>A,HFE,Hemochromatosis,P,review12
+Ex21:c.996G>A,424g5,Disease9,US,review13
+IVS32:c.8097A>T,6gh4,Disease8,US,review14
+Ex31:c.773T>A,5644t,Disease8,B,review15
+5'UTR:c.-8G>C,CFTR,Cystic fibrosis,LP,review16
+Ex66:c.11738G>A,r54gh,Disease1,LB,review17
