@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
         <!-- Theme CSS -->
-        <link href="css/grayscale.css" rel="stylesheet">
+        <link href="css/grayscale-login.css" rel="stylesheet">
         <link href="css/form-elements.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
 
@@ -68,7 +68,7 @@
                             <a class="page-scroll" href="#services">Servicios</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#login">Login</a>
+                            <a class="page-scroll" href="#login">Logout</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="#contact">Contacto</a>
@@ -80,46 +80,199 @@
             <!-- /.container -->
         </nav>
         <!-- User content -->
-        <div>
+        <div class="graphics">
+        <nav class="navbar">
             <h1>Tu información genética</h1>
-            <script type="text/javascript">
-                d3.select("body").append("p").text("Graficos aquí!!!");
-                d3.csv("data/TestResultadosVisualizar.csv", function(data) {
-                    var columns = ['Variante','Gen','Enfermedad','Patogenicidad','Reviews']
-                    
-                    var tabulate = function (data,columns) {
-                        var table = d3.select('body').append('table')
-                        var thead = table.append('thead')
-                        var tbody = table.append('tbody')
+        </nav>
+            <script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="http://vizjs.org/viz.v1.1.0.min.js"></script>
+<script>
 
-                        thead.append('tr')
-                            .selectAll('th')
-                            .data(columns)
-                            .enter()
-                            .append('th')
-                            .text(function (d) { return d })
+var data=[['LikelyBen','CA',16,0],
+['Uncertain','CA',1278,4],
+['Unknown','CA',27,0],
+['Benign','CA',58,0],
+['LikelyPath','CA',1551,15],
+['Pathogenic','CA',141,0],
+['LikelyBen','AZ',5453,35],
+['Uncertain','AZ',683,1],
+['Unknown','AZ',862,0],
+['LikelyPath','AZ',6228,30],
+['LikelyBen','AL',15001,449],
+['Uncertain','AL',527,3],
+['Unknown','AL',836,0],
+['Benign','AL',28648,1419],
+['LikelyPath','AL',3,0],
+['LikelyBen','CO',13,0],
+['Uncertain','CO',396,0],
+['Unknown','CO',362,0],
+['Benign','CO',78,10],
+['LikelyPath','CO',2473,32],
+['Pathogenic','CO',2063,64],
+['Unknown','DE',203,0],
+['LikelyPath','DE',686,2],
+['Pathogenic','DE',826,0],
+['LikelyBen','KS',1738,110],
+['Uncertain','KS',12925,13],
+['Unknown','KS',15413,0],
+['Uncertain','GA',2166,2],
+['Unknown','GA',86,0],
+['Benign','GA',348,3],
+['LikelyPath','GA',4244,18],
+['Pathogenic','GA',1536,1],
+['Uncertain','IA',351,0],
+['LikelyPath','IA',405,1],
+['Uncertain','IL',914,1],
+['Unknown','IL',127,0],
+['LikelyPath','IL',1470,7],
+['Pathogenic','IL',516,1],
+['LikelyBen','IN',43,0],
+['Uncertain','IN',667,1],
+['Unknown','IN',172,0],
+['Benign','IN',149,1],
+['LikelyPath','IN',1380,5],
+['Pathogenic','IN',791,23],
+['Uncertain','FL',1,0],
+['LikelyPath','FL',1,0],
+['Uncertain','MD',1070,1],
+['LikelyPath','MD',1171,2],
+['Pathogenic','MD',33,0],
+['Benign','TX',1,0],
+['Uncertain','MS',407,0],
+['Unknown','MS',3,0],
+['LikelyPath','MS',457,2],
+['Pathogenic','MS',20,0],
+['Uncertain','NC',557,0],
+['Unknown','NC',167,0],
+['Benign','NC',95,1],
+['LikelyPath','NC',1090,5],
+['Pathogenic','NC',676,6],
+['LikelyBen','NM',1195,99],
+['Uncertain','NM',350,3],
+['Unknown','NM',212,0],
+['LikelyPath','NM',1509,8],
+['LikelyBen','NV',3899,389],
+['Uncertain','NV',147,0],
+['Unknown','NV',455,0],
+['Benign','NV',1,1],
+['LikelyPath','NV',4100,16],
+['LikelyBen','OH',12,0],
+['Uncertain','OH',634,2],
+['Unknown','OH',749,0],
+['Benign','OH',119,1],
+['LikelyPath','OH',3705,19],
+['Pathogenic','OH',3456,25],
+['Uncertain','PA',828,2],
+['Unknown','PA',288,0],
+['Benign','PA',141,0],
+['LikelyPath','PA',2625,7],
+['Pathogenic','PA',1920,10],
+['Uncertain','SC',1146,2],
+['Unknown','SC',212,0],
+['Benign','SC',223,4],
+['LikelyPath','SC',1803,6],
+['Pathogenic','SC',761,8],
+['Uncertain','TN',527,0],
+['Unknown','TN',90,0],
+['LikelyPath','TN',930,4],
+['Pathogenic','TN',395,1],
+['LikelyBen','ME',7232,58],
+['Uncertain','ME',1272,0],
+['Unknown','ME',1896,0],
+['Benign','ME',1,0],
+['LikelyPath','ME',10782,33],
+['Pathogenic','ME',1911,3],
+['Uncertain','VA',495,0],
+['Unknown','VA',32,0],
+['Benign','VA',7,0],
+['LikelyPath','VA',1557,12],
+['Pathogenic','VA',24,0],
+['Uncertain','WA',460,1],
+['Benign','WA',88,3],
+['LikelyPath','WA',956,3],
+['Uncertain','WV',232,0],
+['Unknown','WV',71,0],
+['LikelyPath','WV',575,2],
+['Pathogenic','WV',368,3]
+];
+var color ={Pathogenic:"#3366CC", LikelyPath:"#DC3912",  LikelyBen:"#FF9900", Unknown:"#109618", Benign:"#990099", Uncertain:"#0099C6"};
+var svg = d3.select("body").append("svg").attr("width", 960).attr("height", 800);
 
-                        var rows = tbody.selectAll('tr')
-                            .data(data)
-                            .enter()
-                            .append('tr')
+svg.append("text").attr("x",250).attr("y",70)
+    .attr("class","header").text("Variants Information");
+    
+svg.append("text").attr("x",750).attr("y",70)
+    .attr("class","header").text("Genes Involved");
 
-                        var cells = rows.selectAll('td')
-                            .data(function(row) {
-                                return columns.map(function (column) {
-                                    return { column: column, value: row[column] }
-                                })
-                            })
-                            .enter()
-                            .append('td')
-                            .text(function (d) { return d.value })
+var g =[svg.append("g").attr("transform","translate(150,100)")
+        ,svg.append("g").attr("transform","translate(650,100)")];
 
-                        return table;
-                    }
-                        
-                    tabulate(data,columns)
-                })
-            </script>
+var bp=[ viz.bP()
+        .data(data)
+        .min(12)
+        .pad(1)
+        .height(600)
+        .width(200)
+        .barSize(35)
+        .fill(d=>color[d.primary])      
+    ,viz.bP()
+        .data(data)
+        .value(d=>d[3])
+        .min(12)
+        .pad(1)
+        .height(600)
+        .width(200)
+        .barSize(35)
+        .fill(d=>color[d.primary])
+];
+        
+[0,1].forEach(function(i){
+    g[i].call(bp[i])
+    
+    g[i].append("text").attr("x",-50).attr("y",-8).style("text-anchor","middle").text("Pathogenesis");
+    g[i].append("text").attr("x", 250).attr("y",-8).style("text-anchor","middle").text("Gene");
+    
+    g[i].append("line").attr("x1",-100).attr("x2",0);
+    g[i].append("line").attr("x1",200).attr("x2",300);
+    
+    g[i].append("line").attr("y1",610).attr("y2",610).attr("x1",-100).attr("x2",0);
+    g[i].append("line").attr("y1",610).attr("y2",610).attr("x1",200).attr("x2",300);
+    
+    g[i].selectAll(".mainBars")
+        .on("mouseover",mouseover)
+        .on("mouseout",mouseout);
+
+    g[i].selectAll(".mainBars").append("text").attr("class","label")
+        .attr("x",d=>(d.part=="primary"? -30: 30))
+        .attr("y",d=>+6)
+        .text(d=>d.key)
+        .attr("text-anchor",d=>(d.part=="primary"? "end": "start"));
+    
+    g[i].selectAll(".mainBars").append("text").attr("class","perc")
+        .attr("x",d=>(d.part=="primary"? -100: 80))
+        .attr("y",d=>+6)
+        .text(function(d){ return d3.format("0.0%")(d.percent)})
+        .attr("text-anchor",d=>(d.part=="primary"? "end": "start"));
+});
+
+function mouseover(d){
+    [0,1].forEach(function(i){
+        bp[i].mouseover(d);
+        
+        g[i].selectAll(".mainBars").select(".perc")
+        .text(function(d){ return d3.format("0.0%")(d.percent)});
+    });
+}
+function mouseout(d){
+    [0,1].forEach(function(i){
+        bp[i].mouseout(d);
+        
+        g[i].selectAll(".mainBars").select(".perc")
+        .text(function(d){ return d3.format("0.0%")(d.percent)});
+    });
+}
+d3.select(self.frameElement).style("height", "800px");
+</script>
         </div>
 
 
