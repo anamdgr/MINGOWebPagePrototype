@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>MINGO Bioinformatics</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="vendor/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <!-- Theme CSS -->
+        <link href="css/grayscale.css" rel="stylesheet">
+        <link href="css/form-elements.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./img/Inverso.png" />
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- D3.js -->
+        <script type="text/javascript" src="d3/d3.min.js"></script>
+
+    </head>
+    
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <img class="fluid-img mingo-icon" src="./img/MINGO_icon.png"></img> MINGO <span class="light">Bioinformatics</span>
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#about">Sobre nosotros</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#services">Servicios</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#login">Login</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contacto</a>
+                        </li>                    
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- User content -->
+        <div>
+            <h1>Tu información genética</h1>
+            <script type="text/javascript">
+                d3.select("body").append("p").text("Graficos aquí!!!");
+                d3.csv("data/TestResultadosVisualizar.csv", function(data) {
+                    var columns = ['Variante','Gen','Enfermedad','Patogenicidad','Reviews']
+                    
+                    var tabulate = function (data,columns) {
+                        var table = d3.select('body').append('table')
+                        var thead = table.append('thead')
+                        var tbody = table.append('tbody')
+
+                        thead.append('tr')
+                            .selectAll('th')
+                            .data(columns)
+                            .enter()
+                            .append('th')
+                            .text(function (d) { return d })
+
+                        var rows = tbody.selectAll('tr')
+                            .data(data)
+                            .enter()
+                            .append('tr')
+
+                        var cells = rows.selectAll('td')
+                            .data(function(row) {
+                                return columns.map(function (column) {
+                                    return { column: column, value: row[column] }
+                                })
+                            })
+                            .enter()
+                            .append('td')
+                            .text(function (d) { return d.value })
+
+                        return table;
+                    }
+                        
+                    tabulate(data,columns)
+                })
+            </script>
+        </div>
+
+
+        <!-- Javascript -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/grayscale.js"></script>
+        
+        <script src="js/script.js"></script>
+
+    </body>
+
+</html>
