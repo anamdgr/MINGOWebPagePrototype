@@ -49,7 +49,7 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                         Menu <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">
+                    <a class="navbar-brand page-scroll" href="./index.html">
                         <img class="fluid-img mingo-icon" src="./img/MINGO_icon.png"></img> MINGO <span class="light">Bioinformatics</span>
                     </a>
                 </div>
@@ -61,29 +61,61 @@
                         <li class="hidden">
                             <a href="#page-top"></a>
                         </li>
-                        <li>
-                            <a class="page-scroll" href="#about">Sobre nosotros</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#services">Servicios</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#login">Logout</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#contact">Contacto</a>
-                        </li>                    
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#login">
+                                <i class="fa fa-user user-icon"></i>Usuario<i class="fa fa-sort-desc user-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu user-menu">
+                                <li>
+                                    <div class="navbar-login">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <p class="text-center text-menu">
+                                                    <span class="fa fa-user icon-size"></span>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <p class="text-left">Nombre Apellido</p>
+                                                <p class="text-left small">correoElectronico@email.com</p>
+                                                <p class="text-left">
+                                                    <a href="#" class="btn btn-primary btn-block btn-sm">Actualizar Datos</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="navbar-login navbar-login-session">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <p>
+                                                    <a href="#" class="btn btn-danger btn-block">Cerrar Sesion</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>                 
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
             <!-- /.container -->
+        </nav class="navbar">
+        <!-- User navbar -->
+        <nav class="navbar navbar-fixed-top user-navbar">
+            <div class="container">
+                <div class="user-header">
+                    <img class="fluid-img adn-icon" src="./img/adn-icon.png"></img>
+                    <a href="#">mi genoma</a>
+                    <img class="fluid-img adn-icon" src="./img/adn-icon.png"></img>
+                </div>
+            </div>
         </nav>
         <!-- User content -->
         <div class="graphics">
-        <nav class="navbar">
-            <h1>Tu información genética</h1>
-        </nav>
             <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="http://vizjs.org/viz.v1.1.0.min.js"></script>
 <script>
@@ -195,7 +227,7 @@ var data=[['LikelyBen','CA',16,0],
 ['LikelyPath','WV',575,2],
 ['Pathogenic','WV',368,3]
 ];
-var color ={Pathogenic:"#3366CC", LikelyPath:"#DC3912",  LikelyBen:"#FF9900", Unknown:"#109618", Benign:"#990099", Uncertain:"#0099C6"};
+var color ={Pathogenic:"#B22222", LikelyPath:"#FF6347",  LikelyBen:"#008B8B", Unknown:"#483D8B", Benign:"#3CB371", Uncertain:"#FF8C00"};
 var svg = d3.select("body").append("svg").attr("width", 960).attr("height", 800);
 
 svg.append("text").attr("x",250).attr("y",70)
@@ -274,6 +306,7 @@ function mouseout(d){
 d3.select(self.frameElement).style("height", "800px");
 </script>
         </div>
+
 
 
         <!-- Javascript -->
