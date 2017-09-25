@@ -82,7 +82,7 @@ a:focus {
   margin-right: 10px;
 }
 .mingo-logo {
-  height: 320px;
+  height: 280px;
   margin-top: 100px;
 }
 .mingo-logo-inverso {
@@ -139,7 +139,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/fondo.jpeg) no-repeat bottom center scroll;
+  background: url(../img/pies-familia-feliz-1.jpg) no-repeat bottom center scroll;
   background-color: #0b2c55;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -169,13 +169,14 @@ a:focus {
   }
 }
 .btn-circle {
-  width: 70px;
-  height: 70px;
+  width: 60px !important;
+  height: 60px !important;
   margin-top: 15px;
-  padding: 7px 16px;
+  vertical-align: center !important;
+  padding-top: 6px !important;
   border: 2px solid white !important;
   border-radius: 100% !important;
-  font-size: 40px;
+  font-size: 18px !important;
   color: white;
   background: transparent !important;
   -webkit-transition: background 0.3s ease-in-out;
@@ -231,6 +232,32 @@ a:focus {
     -moz-transform: scale(1);
     transform: scale(1);
   }
+}
+
+.comparative-section {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.comparative-section .col-lg-4 {
+  text-align: center;
+}
+
+.comparative-section .btn {
+  background-color: #00a5cf !important;
+}
+
+.rounded-circle {
+    color: #fff;
+    width: 170px;
+    height: 170px;
+    line-height: 50px;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #7ae582;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
 .adn-row {

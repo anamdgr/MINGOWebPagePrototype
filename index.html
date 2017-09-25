@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MINGO Bioinformatics</title>
+    <title>MINGO bioinformatics</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,9 +24,11 @@
     <link href="css/grayscale.css" rel="stylesheet">
     <link href="css/form-elements.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet">
+    <link href="css/accordion.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./img/Inverso.png" />
+    <link rel="icon" type="image/png" href="./img/logo_inverso.png" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,7 +49,7 @@
                     Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <img class="fluid-img mingo-icon" src="./img/MINGO_icon.png"></img> MINGO <span class="light">Bioinformatics</span>
+                    <img class="fluid-img mingo-icon" src="./img/MINGO_icon.png"></img> MINGO <span class="light">bioinformatics</span>
                 </a>
             </div>
 
@@ -59,13 +61,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Sobre nosotros</a>
+                        <a class="page-scroll" href="#about">Productos</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#services">Servicios</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#login">Login</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Sobre nosotros</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contacto</a>
@@ -93,6 +98,104 @@
         </div>
     </header>
 
+    <!-- Intro Section -->
+    <section id="comparative" class="container comparative-section">
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="rounded-circle"></img>
+                <h3>Genoma Completo</h3>
+                <p>Detalles</p>
+                <p><a class="btn btn-secondary" href="#" role="button">Saber más</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img class="rounded-circle"></img>
+                <h3>Exoma Completo</h3>
+                <p>Detalles</p>
+                <p><a class="btn btn-secondary" href="#" role="button">Saber más</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img class="rounded-circle"></img>
+                <h3>Análisis personalizdos</h3>
+                <p>Detalles</p>
+                <p><a class="btn btn-secondary" href="#" role="button">Saber más</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Schedule Section -->
+    <section id="schedule" class="container schedule-section text-center">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">    
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-body">
+                                <p class="timeline-title">¿Problemas en la digestión de algunos alimentos?</p>
+                                <div class="accordion-container">
+                                    <a href="#stay_here" class="accordion-titulo"><p><span class="toggle-icon"></span></p></a>
+                                    <div class="accordion-content">
+                                        <small>Explicación</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-body">
+                                <p class="timeline-title">¿Por qué el mismo fármaco tiene efectos diferentes según el paciente?</p>
+                                <div class="accordion-container">
+                                    <a href="#stay_here" class="accordion-titulo"><p><span class="toggle-icon"></span></p></a>
+                                    <div class="accordion-content">
+                                        <small>Explicación</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-body">
+                                <p class="timeline-title">¿Soy portador de alguna enfermedad hereditaria?</p>
+                                <div class="accordion-container">
+                                    <a href="#stay_here" class="accordion-titulo"><p><span class="toggle-icon"></span></p></a>
+                                    <div class="accordion-content">
+                                        <small>Explicación</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-body">
+                                <p class="timeline-tittle">¿Puede mi bebé sufrir una enferdad rara?</p>
+                                <div class="accordion-container">
+                                    <a href="#stay_here" class="accordion-titulo"><p><span class="toggle-icon"></span></p></a>
+                                    <div class="accordion-content">
+                                        <small>Explicación</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-body">
+                                <p class="timeline-title">¿Tengo riesgo de sufrir cáncer de mama?</p>
+                                <div class="accordion-container">
+                                    <a href="#stay_here" class="accordion-titulo"><p><span class="toggle-icon"></span></p></a>
+                                    <div class="accordion-content">
+                                        <small>Explicación</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <!-- About Section -->
     <section id="about" class="container content-section">
         <div class="row">
@@ -192,7 +295,7 @@
                 
             </div>
             <div class="col-lg-6">
-                <img class="fluid-img mingo-logo-inverso" src="./img/Inverso.png"></img>
+                <img class="fluid-img mingo-logo-inverso" src="./img/logo_inverso.png"></img>
                 <div class="mapa-texto">
                     <p>La Farola - Andalucía Open Future<br><small class="text-muted"> (Calle Concejal Muñoz Cerván, 3, 29004 Málaga)</small></p>
                     <p><a href="mailto:info@mingobioinformatics.com">info@mingobioinformatics.com</a></p>
