@@ -98,27 +98,31 @@ td {
 
 .form-top {
 	overflow: hidden;
-	padding: 0 25px 0px 25px;
+	padding: 0 25px 0 25px;
 	background: #444;
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.2);
 	-moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
 	text-align: left;
+	border-bottom: #25a18e 1px solid;
 }
 
 .form-top-left {
 	float: left;
 	width: 75%;
-	padding-top: 15px;
 }
 
-.form-top-left h3 { margin-top: 0; color: #fff; }
+.form-top-left h3 {
+	color: #25a18e; 
+	margin-top: 25px;
+	margin-bottom: 0px;
+}
 
 .form-top-right {
 	float: left;
 	width: 25%;
 	padding-top: 5px;
 	font-size: 50px;
-	color: #fff;
+	color: #25a18e;
 	line-height: 70px;
 	text-align: right;
 	opacity: 0.3;
@@ -127,9 +131,10 @@ td {
 .form-bottom {
 	padding: 15px 15px 15px 15px;
 	background: #444;
-	background: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.2);
 	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
 	text-align: left;
+	color: #0b2c55;
 }
 
 .form-bottom form textarea {
@@ -138,12 +143,12 @@ td {
 
 .form-bottom form button.btn {
 	width: 100%;
-	background-color: #0b2c55 !important;
+	background-color: #008080 !important;
 }
 
 .form-bottom form a.btn {
   width: 100%;
-  background-color: #0b2c55 !important;
+  background-color: #008080 !important;
 }
 
 .form-bottom form .input-error {

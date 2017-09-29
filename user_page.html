@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>MINGO Bioinformatics</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="vendor/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <!-- Theme CSS -->
+        <link href="css/grayscale-login.css" rel="stylesheet">
+        <link href="css/form-elements.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./img/Inverso.png" />
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- D3.js -->
+        <script type="text/javascript" src="d3/d3.min.js"></script>
+
+    </head>
+    
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="./index.html">
+                        <img class="fluid-img mingo-icon" src="./img/MINGO_icon.png"></img> MINGO <span class="light">Bioinformatics</span>
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#login">
+                                <i class="fa fa-user user-icon"></i>Usuario<i class="fa fa-sort-desc user-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu user-menu">
+                                <li>
+                                    <div class="navbar-login">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <p class="text-center text-menu">
+                                                    <span class="fa fa-user icon-size"></span>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <p class="text-left">Nombre Apellido</p>
+                                                <p class="text-left small">correoElectronico@email.com</p>
+                                                <p class="text-left">
+                                                    <a href="#" class="btn btn-primary btn-block btn-sm">Actualizar Datos</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="navbar-login navbar-login-session">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <p>
+                                                    <a href="#" class="btn btn-danger btn-block">Cerrar Sesion</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>                 
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav class="navbar">
+        <!-- User navbar -->
+        <nav class="navbar navbar-fixed-top user-navbar">
+            <div class="container">
+                <div class="user-header">
+                    <img class="fluid-img adn-icon" src="./img/adn-icon.png"></img>
+                    <a href="#">mi genoma</a>
+                    <img class="fluid-img adn-icon" src="./img/adn-icon.png"></img>
+                </div>
+            </div>
+        </nav>
+        <!-- User content -->
+        <div class="graphics">
+            <script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="http://vizjs.org/viz.v1.1.0.min.js"></script>
+<script>
+
+var data=[['LikelyBen','CA',16,0],
+['Uncertain','CA',1278,4],
+['Unknown','CA',27,0],
+['Benign','CA',58,0],
+['LikelyPath','CA',1551,15],
+['Pathogenic','CA',141,0],
+['LikelyBen','AZ',5453,35],
+['Uncertain','AZ',683,1],
+['Unknown','AZ',862,0],
+['LikelyPath','AZ',6228,30],
+['LikelyBen','AL',15001,449],
+['Uncertain','AL',527,3],
+['Unknown','AL',836,0],
+['Benign','AL',28648,1419],
+['LikelyPath','AL',3,0],
+['LikelyBen','CO',13,0],
+['Uncertain','CO',396,0],
+['Unknown','CO',362,0],
+['Benign','CO',78,10],
+['LikelyPath','CO',2473,32],
+['Pathogenic','CO',2063,64],
+['Unknown','DE',203,0],
+['LikelyPath','DE',686,2],
+['Pathogenic','DE',826,0],
+['LikelyBen','KS',1738,110],
+['Uncertain','KS',12925,13],
+['Unknown','KS',15413,0],
+['Uncertain','GA',2166,2],
+['Unknown','GA',86,0],
+['Benign','GA',348,3],
+['LikelyPath','GA',4244,18],
+['Pathogenic','GA',1536,1],
+['Uncertain','IA',351,0],
+['LikelyPath','IA',405,1],
+['Uncertain','IL',914,1],
+['Unknown','IL',127,0],
+['LikelyPath','IL',1470,7],
+['Pathogenic','IL',516,1],
+['LikelyBen','IN',43,0],
+['Uncertain','IN',667,1],
+['Unknown','IN',172,0],
+['Benign','IN',149,1],
+['LikelyPath','IN',1380,5],
+['Pathogenic','IN',791,23],
+['Uncertain','FL',1,0],
+['LikelyPath','FL',1,0],
+['Uncertain','MD',1070,1],
+['LikelyPath','MD',1171,2],
+['Pathogenic','MD',33,0],
+['Benign','TX',1,0],
+['Uncertain','MS',407,0],
+['Unknown','MS',3,0],
+['LikelyPath','MS',457,2],
+['Pathogenic','MS',20,0],
+['Uncertain','NC',557,0],
+['Unknown','NC',167,0],
+['Benign','NC',95,1],
+['LikelyPath','NC',1090,5],
+['Pathogenic','NC',676,6],
+['LikelyBen','NM',1195,99],
+['Uncertain','NM',350,3],
+['Unknown','NM',212,0],
+['LikelyPath','NM',1509,8],
+['LikelyBen','NV',3899,389],
+['Uncertain','NV',147,0],
+['Unknown','NV',455,0],
+['Benign','NV',1,1],
+['LikelyPath','NV',4100,16],
+['LikelyBen','OH',12,0],
+['Uncertain','OH',634,2],
+['Unknown','OH',749,0],
+['Benign','OH',119,1],
+['LikelyPath','OH',3705,19],
+['Pathogenic','OH',3456,25],
+['Uncertain','PA',828,2],
+['Unknown','PA',288,0],
+['Benign','PA',141,0],
+['LikelyPath','PA',2625,7],
+['Pathogenic','PA',1920,10],
+['Uncertain','SC',1146,2],
+['Unknown','SC',212,0],
+['Benign','SC',223,4],
+['LikelyPath','SC',1803,6],
+['Pathogenic','SC',761,8],
+['Uncertain','TN',527,0],
+['Unknown','TN',90,0],
+['LikelyPath','TN',930,4],
+['Pathogenic','TN',395,1],
+['LikelyBen','ME',7232,58],
+['Uncertain','ME',1272,0],
+['Unknown','ME',1896,0],
+['Benign','ME',1,0],
+['LikelyPath','ME',10782,33],
+['Pathogenic','ME',1911,3],
+['Uncertain','VA',495,0],
+['Unknown','VA',32,0],
+['Benign','VA',7,0],
+['LikelyPath','VA',1557,12],
+['Pathogenic','VA',24,0],
+['Uncertain','WA',460,1],
+['Benign','WA',88,3],
+['LikelyPath','WA',956,3],
+['Uncertain','WV',232,0],
+['Unknown','WV',71,0],
+['LikelyPath','WV',575,2],
+['Pathogenic','WV',368,3]
+];
+var color ={Pathogenic:"#B22222", LikelyPath:"#FF6347",  LikelyBen:"#008B8B", Unknown:"#483D8B", Benign:"#3CB371", Uncertain:"#FF8C00"};
+var svg = d3.select("body").append("svg").attr("width", 960).attr("height", 800);
+
+svg.append("text").attr("x",250).attr("y",70)
+    .attr("class","header").text("Variants Information");
+    
+svg.append("text").attr("x",750).attr("y",70)
+    .attr("class","header").text("Genes Involved");
+
+var g =[svg.append("g").attr("transform","translate(150,100)")
+        ,svg.append("g").attr("transform","translate(650,100)")];
+
+var bp=[ viz.bP()
+        .data(data)
+        .min(12)
+        .pad(1)
+        .height(600)
+        .width(200)
+        .barSize(35)
+        .fill(d=>color[d.primary])      
+    ,viz.bP()
+        .data(data)
+        .value(d=>d[3])
+        .min(12)
+        .pad(1)
+        .height(600)
+        .width(200)
+        .barSize(35)
+        .fill(d=>color[d.primary])
+];
+        
+[0,1].forEach(function(i){
+    g[i].call(bp[i])
+    
+    g[i].append("text").attr("x",-50).attr("y",-8).style("text-anchor","middle").text("Pathogenesis");
+    g[i].append("text").attr("x", 250).attr("y",-8).style("text-anchor","middle").text("Gene");
+    
+    g[i].append("line").attr("x1",-100).attr("x2",0);
+    g[i].append("line").attr("x1",200).attr("x2",300);
+    
+    g[i].append("line").attr("y1",610).attr("y2",610).attr("x1",-100).attr("x2",0);
+    g[i].append("line").attr("y1",610).attr("y2",610).attr("x1",200).attr("x2",300);
+    
+    g[i].selectAll(".mainBars")
+        .on("mouseover",mouseover)
+        .on("mouseout",mouseout);
+
+    g[i].selectAll(".mainBars").append("text").attr("class","label")
+        .attr("x",d=>(d.part=="primary"? -30: 30))
+        .attr("y",d=>+6)
+        .text(d=>d.key)
+        .attr("text-anchor",d=>(d.part=="primary"? "end": "start"));
+    
+    g[i].selectAll(".mainBars").append("text").attr("class","perc")
+        .attr("x",d=>(d.part=="primary"? -100: 80))
+        .attr("y",d=>+6)
+        .text(function(d){ return d3.format("0.0%")(d.percent)})
+        .attr("text-anchor",d=>(d.part=="primary"? "end": "start"));
+});
+
+function mouseover(d){
+    [0,1].forEach(function(i){
+        bp[i].mouseover(d);
+        
+        g[i].selectAll(".mainBars").select(".perc")
+        .text(function(d){ return d3.format("0.0%")(d.percent)});
+    });
+}
+function mouseout(d){
+    [0,1].forEach(function(i){
+        bp[i].mouseout(d);
+        
+        g[i].selectAll(".mainBars").select(".perc")
+        .text(function(d){ return d3.format("0.0%")(d.percent)});
+    });
+}
+d3.select(self.frameElement).style("height", "800px");
+</script>
+        </div>
+
+
+
+        <!-- Javascript -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/grayscale.js"></script>
+        
+        <script src="js/script.js"></script>
+
+    </body>
+
+</html>

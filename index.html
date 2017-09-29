@@ -28,7 +28,7 @@
     <link href="css/accordion.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./img/logo_inverso.png" />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,14 +61,14 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Productos</a>
+                        <a href="./login.html">Login</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#comparative">Productos</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#services">Servicios</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#login">Login</a>
-                    </li>
+                    </li>                   
                     <li>
                         <a class="page-scroll" href="#about">Sobre nosotros</a>
                     </li>
@@ -87,12 +87,17 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <p><img class="fluid-img mingo-logo" src="./img/logo.png"></img></p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                    <div class="col-md-8">
+                        <h3>Tu salud, de forma preventiva y personalizada</h3>
                     </div>
+                    <div class="col-md-4 col-logo">
+                        <p><img class="fluid-img mingo-logo" src="./img/logo.png"></img></p>
+                    </div>
+                </div>
+                <div class="row go-down-row">
+                    <a href="#about" class="btn btn-circle page-scroll">
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -100,21 +105,22 @@
 
     <!-- Intro Section -->
     <section id="comparative" class="container comparative-section">
+        <h2>¿Qué aporta la genómica a la práctica clínica?</h2>
         <div class="row">
             <div class="col-lg-4">
-                <img class="rounded-circle"></img>
+                <img class="fluid-img compare-images" src="./img/GenomaCompleto.png"></img>
                 <h3>Genoma Completo</h3>
                 <p>Detalles</p>
                 <p><a class="btn btn-secondary" href="#" role="button">Saber más</a></p>
             </div>
             <div class="col-lg-4">
-                <img class="rounded-circle"></img>
+                <img class="compare-images" src="./img/ExomaCompleto.png"></img>
                 <h3>Exoma Completo</h3>
                 <p>Detalles</p>
                 <p><a class="btn btn-secondary" href="#" role="button">Saber más</a></p>
             </div>
             <div class="col-lg-4">
-                <img class="rounded-circle"></img>
+                <img class="compare-images" src="./img/EstudiosPersonalizados.png"></img>
                 <h3>Análisis personalizdos</h3>
                 <p>Detalles</p>
                 <p><a class="btn btn-secondary" href="#" role="button">Saber más</a></p>
@@ -201,89 +207,17 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 content-col">
                 <h2>Sobre nosotros</h2>
-                <p>MINGO ofrece servicios bioinformáticos, que se centran en la realización de análisis genéticos <br>actualizables a partir de la tecnología más puntera de secuenciación completa.</p>
-                <p>Ya puedes disponer de toda tú información genética, <br>de la forma más rigurosa y actualizada, <br>para toda la vida.</p>
+                
             </div>
-        </div>
-        <div class="row adn-row">
-            <img class="fluid-img adn-img1" src="./img/helice2-adn-invert.png"></img>
-            <img class="fluid-img adn-img2" src="./img/helice2-adn.jpeg"></img>
-        </div>
-    </section>
-
-    <!-- Schedule Section -->
-    <section id="services" class="container schedule-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">    
-                <h2 id="timeline">Servicios</h2>
-                <h3>Servicios Neonatos</h3>
-                <p><span class="text-muted">Desde MINGO ofrecemos un servicio de análisis genético orientado a recién nacidos donde se podrán encontrar factores de riesgo a diversas enfermedades que se expresan en una primera etapa y le acompañará a lo largo de todas las etapas de su vida, actualizándose con los nuevos estudios que salgan a la luz en el futuro.</span></p>
-                <h3>Servicios Adultos</h3>
-                <p><span class="text-muted">La línea general de MINGO, para cualquier persona que quiera conocerse mejor o tener una información más completa sobre su salud. Ofrecemos análisis genético completo con actualizaciones junto a un servicio de consejo genético para poder interpretar los resultados.<br>Además, facilitamos los datos resultantes de la secuenciación al paciente para que este sea el dueño de su propia información y pueda disponer de ella para cualquier servicio adicional.</span></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Login Section -->
-    <section id="login">
-        <div class="top-content">            
-            <div class="inner-bg">
-                <div class="container login-cont">
-                    <div class="row form-row">
-                        <div class="col-sm-4">
-                            <img class="fluid-img" src="./img/adn2-draw-invert.jpg"></img>
-                        </div>
-                        <div class="col-sm-4 form-box">                           
-                            <div class="form-top">
-                                <div class="form-top-left">
-                                    <h3>Login to our site</h3>
-                                </div>
-                                <div class="form-top-right">
-                                    <i class="fa fa-lock"></i>
-                                </div>
-                            </div>
-                            <div class="form-bottom">
-                                <form role="form" action="" method="post" class="login-form">
-                                    <div class="form-group">
-                                        <label class="sr-only" for="form-username">Username</label>
-                                        <input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="sr-only" for="form-password">Password</label>
-                                        <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
-                                    </div>
-                                    <a class="btn" href="./login.html">Sign in!</a>
-                                </form>
-                            </div>
-                            <div class="social-login">
-                            <h3>...or login with:</h3>
-                            <div class="social-login-buttons">
-                                <a class="btn btn-link-2" href="#">
-                                    <i class="fa fa-facebook"></i> Facebook
-                                </a>
-                                <a class="btn btn-link-2" href="#">
-                                    <i class="fa fa-twitter"></i> Twitter
-                                </a>
-                                <a class="btn btn-link-2" href="#">
-                                    <i class="fa fa-google-plus"></i> Google Plus
-                                </a>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <img class="fluid-img" src="./img/adn2-draw.jpg"></img>
-                        </div>
-                    </div>
-                </div>
-            </div>            
         </div>
     </section>
 
     <!-- Promo Section -->
     <section id="promo" class="container promo-section text-center">
-        <div class="row"></div>
-        <h2>MINGO Bioinformatics<h2>
-        <p>Tu plataforma genética</p>
+        <div class="row">            
+            <p>más tranquilidad, más salud</p>
+            <h2>Más Vida<h2>
+        </div>
     </section>
 
     <!-- Contact Section -->
@@ -295,7 +229,7 @@
                 
             </div>
             <div class="col-lg-6">
-                <img class="fluid-img mingo-logo-inverso" src="./img/logo_inverso.png"></img>
+                <img class="fluid-img mingo-logo-inverso" src="./img/logo_inverso-t.png"></img>
                 <div class="mapa-texto">
                     <p>La Farola - Andalucía Open Future<br><small class="text-muted"> (Calle Concejal Muñoz Cerván, 3, 29004 Málaga)</small></p>
                     <p><a href="mailto:info@mingobioinformatics.com">info@mingobioinformatics.com</a></p>
@@ -320,7 +254,9 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; 2017 MINGO Bioinformatics</p>
+            <div class="row">
+                <p>Copyright &copy; 2017 MINGO Bioinformatics</p>
+            </div>            
         </div>
     </footer>
 
