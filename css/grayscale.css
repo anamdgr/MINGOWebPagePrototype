@@ -337,6 +337,15 @@ a:focus {
   background-size: cover;
 }
 
+.schedule-section2 {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #eeeeee;
+  background: none;
+  background-size: cover;
+}
+
 #contact {
   background-color: white;
 }
