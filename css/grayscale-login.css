@@ -130,7 +130,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .navbar-custom .nav li.active a:hover {
   color: white;
@@ -307,6 +307,11 @@ a:focus {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #eeeeee;
+}
+.schedule-section2 {
+  width: 100%;
+  padding: 50px 200px 50px 200px;
+  background-color: #F7F8F8;
 }
 
 #texto-domingo {
