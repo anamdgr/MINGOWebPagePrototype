@@ -8,7 +8,7 @@
     align-items: center !important;
 }
 .img-col {
-    padding: 30px;
+    padding: 60px;
 }
 .right-col {
     padding-left: 50px;
@@ -61,7 +61,7 @@
     background-color: #ffffff;
     border: 1px solid #d4d4d4;
     border-radius: 2px;
-    padding: 10px;
+    padding: 5px;
     position: relative;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -71,7 +71,7 @@
 
     .timeline2 > li > .timeline2-panel:before {
         position: absolute;
-        top: 26px;
+        top: 13px;
         right: -15px;
         display: inline-block;
         border-top: 15px solid transparent;
@@ -83,7 +83,7 @@
 
     .timeline2 > li > .timeline2-panel:after {
         position: absolute;
-        top: 27px;
+        top: 14px;
         right: -14px;
         display: inline-block;
         border-top: 14px solid transparent;
@@ -95,13 +95,13 @@
 
 .timeline2 > li > .timeline2-badge {
     color: white;
-    width: 60px;
-    height: 60px;
-    line-height: 50px;
-    font-size: 1.2em;
+    width: 55px;
+    height: 55px;
+    line-height: 30px;
+    font-size: 1.1em;
     text-align: center;
     position: absolute;
-    top: 8px;
+    top: 0px;
 	left: -75px;
     background-color: #0B2C55;
     z-index: 100;
@@ -129,37 +129,43 @@
 	right: auto;
 }
 
-.timeline2-badge.primary {
-    background-color: #000000 !important;
+.timeline2-badge.one {
+    background-color: #0B2C55 !important;
 }
 
-.timeline2-badge.success {
-    background-color: #3cba54 !important;
+.timeline2-badge.two {
+    background-color: #00A5CF !important;
 }
 
-.timeline2-badge.warning {
-    background-color: #f4c20d !important;
+.timeline2-badge.three {
+    background-color: #9FFFCB !important;
 }
 
-.timeline2-badge.danger {
-    background-color: #db3236 !important;
+.timeline2-badge.four {
+    background-color: #7AE582 !important;
 }
 
-.timeline2-badge.info {
-    background-color: #4885ed !important;
+.timeline2-badge.five {
+    background-color: #25A18E !important;
 }
-.timeline2-badge h1 {
+.timeline2-badge.six {
+    background-color: #0B2C55 !important;
+}
+.timeline2-badge.seven {
+    background-color: #00A5CF !important;
+}
+.timeline2-badge h2 {
     color: white !important;
 }
 
 .timeline2-body {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
     color: inherit;
 }
 .timeline2-body h4 {
     margin: 5px;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
 }
 
