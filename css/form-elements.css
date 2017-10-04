@@ -52,7 +52,7 @@ button.btn {
     margin: 0;
     padding: 0 20px;
     vertical-align: middle;
-    background: #496689;
+    background: #008080;
     border: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -69,16 +69,16 @@ button.btn:hover { opacity: 0.6; color: #fff; }
 
 button.btn:active { outline: 0; opacity: 0.6; color: #fff; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 
-button.btn:focus { outline: 0; opacity: 0.6; background: #496689; color: #fff; }
+button.btn:focus { outline: 0; opacity: 0.6; background: #008080; color: #fff; }
 
-button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; background: #496689; color: #fff; }
+button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; background: #008080; color: #fff; }
 
 .btn {
     height: 50px;
     margin: 0;
     padding: 0 20px;
     vertical-align: middle;
-    background: #496689;
+    background: #008080;
     border: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -95,7 +95,7 @@ button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; bac
 
 .btn:active { outline: 0; opacity: 0.6; color: #fff; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 
-.btn:focus { outline: 0; opacity: 0.6; background: #496689; color: #fff; }
+.btn:focus { outline: 0; opacity: 0.6; background: #008080; color: #fff; }
 
 .btn:active:focus, 
-.btn.active:focus { outline: 0; opacity: 0.6; background: #496689; color: #fff; }
+.btn.active:focus { outline: 0; opacity: 0.6; background: #008080; color: #fff; }

@@ -288,7 +288,37 @@ a:focus {
   padding-top: 50px;
   margin-bottom: -120px;
 }
+.comparative-section {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: #F7F8F8;
+}
 
+.comparative-section h3 {
+  color: #0B2C55 !important;
+}
+
+.comparative-section .col-lg-4 {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.comparative-section h3 {
+  font-size: 26px;
+}
+
+.comparative-section .btn {
+  background-color: #008080;
+}
+.compare-images {
+    color: #fff;
+    width: 90%;
+    text-align: center;
+    background-color: transparent;
+    margin-top: -30px;
+    margin-bottom: -70px;
+}
 .promo-section {
   width: 100%;
   height: 500px;
@@ -353,16 +383,16 @@ a:focus {
   background-color: #008080;
 }
 .btn-default {
-  border: 1px solid #677B95;
-  color: #677B95;
+  border: 1px solid #008080;
+  color: #008080;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #677B95;
+  border: 1px solid #008080;
   outline: none;
   color: white;
-  background-color: #677B95;
+  background-color: #008080;
 }
 ul.banner-social-buttons {
   margin-top: 0;

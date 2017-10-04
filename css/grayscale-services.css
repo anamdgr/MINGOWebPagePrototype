@@ -289,18 +289,20 @@ a:focus {
 }
 .comparative-section {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
+  background-color: #F7F8F8;
 }
 
 .comparative-section h3 {
   color: #0B2C55 !important;
+  font-size: 26px;
 }
 
-.comparative-section .col-lg-4 {
+.comparative-section .col-lg-3 {
   text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .comparative-section .btn {
@@ -317,7 +319,7 @@ a:focus {
 }
 .content-section {
   width: 100%;
-  padding-top: 170px;
+  padding-top: 150px;
   padding-bottom: 100px;
 }
 
@@ -449,16 +451,16 @@ a:focus {
   background-color: #008080;
 }
 .btn-default {
-  border: 1px solid #677B95;
-  color: #677B95;
+  border: 1px solid #008080;
+  color: #008080;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #677B95;
+  border: 1px solid #008080;
   outline: none;
   color: white;
-  background-color: #677B95;
+  background-color: #008080;
 }
 ul.banner-social-buttons {
   margin-top: 0;
