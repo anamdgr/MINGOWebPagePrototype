@@ -27,3 +27,9 @@ var tabulate = function (data,columns) {
 
   return table;
 }
+
+$('[data-toggle=collapse]').mouseover(function(){
+    $(this).trigger('click');
+}).mouseoout(function(){
+
+});

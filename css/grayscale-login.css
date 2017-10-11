@@ -107,6 +107,7 @@ a:focus {
   float: left;
   margin-top: -5px !important;
   margin-right: 10px;
+  border: 1px solid white;
 }
 .navbar-custom a {
   color: white;
@@ -280,19 +281,28 @@ a:focus {
 
 .content-section {
   width: 100%;
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 100px;
+}
+.login-section {
+  background-color: #F7F8F8;
+}
+.main-section {
+  margin-top: 50px !important;
 }
 
 .content-col {
   padding-top: 50px;
   margin-bottom: -120px;
 }
+.page-header {
+  margin-bottom: 80px;
+}
 .comparative-section {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 0px;
   padding-bottom: 50px;
-  background-color: #F7F8F8;
+  background-color: white;
 }
 
 .comparative-section h3 {
@@ -313,11 +323,12 @@ a:focus {
 }
 .compare-images {
     color: #fff;
-    width: 90%;
+    width: 130%;
     text-align: center;
     background-color: transparent;
-    margin-top: -30px;
-    margin-bottom: -70px;
+    margin-top: -40px;
+    margin-bottom: -120px;
+    margin-left: 10px;
 }
 .promo-section {
   width: 100%;

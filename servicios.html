@@ -26,6 +26,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/timeline2.css" rel="stylesheet">
     <link href="css/accordion.css" rel="stylesheet">
+    <link href="css/sidebar-hidden.css" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./img/favicon.png" />
@@ -43,13 +44,13 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="./index.html">
-                    <img class="fluid-img mingo-icon" src="./img/MINGO_icon.png"></img> MINGO <span class="light">bioinformatics</span>
+                    <img class="fluid-img mingo-icon" src="./img/MINGO_icon.png"></img> MINGO <small><span class="light">bioinformatics</span></small>
                 </a>
             </div>
 
@@ -82,44 +83,121 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Intro Section -->
-    <section id="comparative" class="container comparative-section content-section">
-        <div class="row">
-            <div class="col-lg-3">
-                <img src="img/Iconos_servicios/particulares.png" class="fluid-img compare-images"></img>
-                <h3>Particulares</h3>
-                <p>Secuenciamos tu genoma completo, tu exoma, o zonas específicas para identificar un rasgo concreto que te preocupe. Invierte en tu salud de forma preventiva y dispón de tu toda tu información genética.</p>
-                <p><a class="btn btn-secondary" href="./productos.html" role="button">Saber más</a></p>
+
+
+    <nav class="navbar navbar-default sidebar" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>      
             </div>
-            <div class="col-lg-3">
-                <img src="img/Iconos_servicios/medicos.png" class="fluid-img compare-images"></img>
-                <h3>Médicos</h3>
-                <p>Ponga en práctica la medicina preventiva de precisión utilizando nuestros servicios. Secuenciación de genoma y exoma completo, estudios genéticos de última tecnología, e interpretación para sus pacientes.</p>
-                <p><a class="btn btn-secondary" href="#medical" role="button">Saber más</a></p>
-            </div>
-            <div class="col-lg-3">
-                <img src="img/Iconos_servicios/clinicas.png" class="fluid-img compare-images"></img>
-                <h3>Clínicas</h3>
-                <p>Ofrezca servicios de medicina genómica y análisis personalizados a sus clientes. Secuenciación de genoma y exoma completo, estudios genéticos de última tecnología, e interpretación para sus pacientes.</p>
-                <p><a class="btn btn-secondary" href="#medical" role="button">Saber más</a></p>
-            </div>
-            <div class="col-lg-3">
-                <img src="img/Iconos_servicios/distribuidores.png" class="fluid-img compare-images"></img>
-                <h3>Distribuidores</h3>
-                <p>Le ayudamos a proveer a sus clientes de soluciones para acceder a las últimas tecnologías de secuenciación y análisis genéticos. Disponga de servicios de medicina de precisión líderes en la industria de la salud.</p>
-                <p><a class="btn btn-secondary" href="#distribution" role="button">Saber más</a></p>
+            <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a class="page-scroll" href="#particular">Particulares</span><span class="pull-right hidden-xs showopacity icon-image-1"></span></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#medical">Médicos<span class="pull-right hidden-xs showopacity icon-image-2"></span></a>
+                    </li>          
+                    <li>
+                        <a class="page-scroll" href="#medical">Clínicas<span class="pull-right hidden-xs showopacity icon-image-3"></span></a>
+                    </li>        
+                    <li>
+                        <a class="page-scroll" href="#distribution">Distribuidores<span class="pull-right hidden-xs showopacity icon-image-4"></span></a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
+
+    <script type="text/javascript">
+    
+    </script>
+
+<div class="main">
+
+    <!-- Image section -->
+    <section id="particular" class="container particular-section">
+        <div class="intro">
+            <h2>Particulares</h2>
+            <p class="explain">Invierte en tu tranquilidad descubriendo toda tu información genética. <br>Tú decides cuánto quieres saber y cuándo. Activa tu plan de <br>medicina preventiva para tí y para los tuyos.</p>
+        </div>        
+        <div class="row">
+            <div class="col col-lg-6">   
+                <ul class="timeline2">
+                    <li class="timeline2">
+                        <div class="timeline2-panel">
+                            <div class="timeline2-body">
+                                <p class="timeline2-title">Solicitud de análisis online</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline2">
+                        <div class="timeline2-panel">
+                            <div class="timeline2-body">
+                                <p class="timeline2-title">Toma de muestras sencilla</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline2-">
+                        <div class="timeline2-panel">
+                            <div class="timeline2-body">
+                                <p class="timeline2-title">Área de usuario para gestionar toda tu información</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline2">
+                        <div class="timeline2-panel">
+                            <div class="timeline2-body">
+                                <p class="timeline2-tittle">Visualización interactiva y descarga de datos</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline2">
+                        <div class="timeline2-panel">
+                            <div class="timeline2-body">
+                                <p class="timeline2-title">Consejo médico durante el proceso</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#application" class="btn solicitar" role="button"><small><span class="light">Solicitar</span></small></a>
+                <a href="#technical" class="btn mas-info" role="button"><small><span class="light">+ Info</span></small></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thecnical section -->
+    <section id="technical" class="container technical-section">
+        <h2>Información técnica</h2>
+        <ul>
+            <li>
+                
+            </li>
+            <li>
+                
+            </li>
+            <li>
+                
+            </li>
+            <li>
+                
+            </li>
+        </ul>
     </section>
     
     <!-- Image section -->
     <section id="medical" class="container image-section">
         <div class="intro">
             <h2>Médicos y clínicas</h2>
-            <p class="explain">Apoyamos a los profesionales sanitarios en la práctica de la<br> medicina preventiva, dándoles soporte para que ayuden a sus<br> pacientes a gestionar adecuadamente sus riesgos clínicos.<p>
+            <p class="explain">Apoyamos a los profesionales sanitarios en la práctica de la<br> medicina preventiva, dándoles soporte para que ayuden a sus<br> pacientes a gestionar adecuadamente sus riesgos clínicos.</p>
         </div>        
         <div class="row">
-            <div class="col col-lg-5 col-lg-offset-7 left-col">   
+            <div class="col col-lg-6 col-lg-offset-6 left-col">   
                 <ul class="timeline2">
                     <li class="timeline2-inverted">
                         <div class="timeline2-panel">
@@ -145,7 +223,7 @@
                     <li class="timeline2-inverted">
                         <div class="timeline2-panel">
                             <div class="timeline2-body">
-                                <p class="timeline2-tittle">Acceso interactivo y descarga datos</p>
+                                <p class="timeline2-tittle">Acceso interactivo y descarga de informes</p>
                             </div>
                         </div>
                     </li>
@@ -157,33 +235,52 @@
                         </div>
                     </li>
                 </ul>
+                <a href="#application" class="btn solicitar" role="button"><small><span class="light">Solicitar</span></small></a>
+                <a href="#technical" class="btn mas-info" role="button"><small><span class="light">+ Info</span></small></a>
             </div>
     </section>
 
-    <!-- Thecnical section -->
-    <section id="technical" class="container technical-section">
-        <h2>Información técnica</h2>
-        <ul>
-            <li>
-                
-            </li>
-            <li>
-                
-            </li>
-            <li>
-                
-            </li>
-            <li>
-                
-            </li>
-        </ul>
+    <!-- Form Section -->
+    <section id="application" class="container apply-section">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Dirección de correo electróncio</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">¿Qué tipo de cliente eres?</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Particular</option>
+                            <option>Médico</option>
+                            <option>Clínica</option>
+                            <option>Distribuidor</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Escribe cualquier solicitud, pregunta, o sugerencia</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="btn-form form-group">
+                        <a href="#" class="btn solicitar" role="button"><small><span class="light">Enviar</span></small></a>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
+
 
     <!-- Schedule Section -->
     <section id="distribution" class="container schedule-section2 text-center">
         <div class="intro">
             <h2>Distribuidores del sector sanitario</h2>
-            <p>Como innovadores en genética para el consumidor,<br> estamos abiertos a asociaciones con colaboradores<br> y distribuidores del sector sanitario que quieran<br> ofrecer la última tecnología de procesado y acceso<br> a la información genómica a sus consumidores.</p>
+                <p>Como innovadores en genética para el consumidor,<br> estamos abiertos a asociaciones con colaboradores<br> y distribuidores del sector sanitario.</p>
+                <p>Le ayudamos a proveer a sus clientes de <br>soluciones para acceder a las últimas <br>tecnologías de secuenciación y análisis genéticos.</p>
+                <p>Disponga de servicios de medicina de precisión <br>líderes en la industria de la salud.</p>
+                <a href="#application" class="btn solicitar" role="button"><small><span class="light">Solicitar</span></small></a>
+                <a href="#technical" class="btn mas-info" role="button"><small><span class="light">+ Info</span></small></a>
         </div>
     </section>
 
@@ -218,12 +315,15 @@
     </section>
 
 
+
     <!-- Footer -->
     <footer>
         <div class="container text-center">
             <p>Copyright &copy; 2017 MINGO Bioinformatics</p>
         </div>
     </footer>
+
+</div>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.js"></script>

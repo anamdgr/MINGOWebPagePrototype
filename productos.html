@@ -26,6 +26,7 @@
         <link href="css/style.css" rel="stylesheet">
 		<link href="css/timeline2.css" rel="stylesheet">
 		<link href="css/accordion.css" rel="stylesheet">
+		<link href="css/sidebar-products.css" rel="stylesheet">
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="./img/favicon.png" />
@@ -46,13 +47,13 @@
     <body>
         <!-- Navigation -->
         <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                         Menu <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand page-scroll" href="./index.html">
-                        <img class="fluid-img mingo-icon" src="./img/MINGO_icon.png"></img> MINGO <span class="light">bioinformatics</span>
+                        <img class="fluid-img mingo-icon" src="./img/MINGO_icon.png"></img> MINGO <small><span class="light">bioinformatics</span></small>
                     </a>
                 </div>
 
@@ -61,23 +62,23 @@
                     <ul class="nav navbar-nav">
                         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                         <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a href="./login.html">Login</a>
-                    </li>
-                    <li class="active">
-                        <a href="#page-top">Productos</a>
-                    </li>
-                    <li>
-                        <a href="./servicios.html">Servicios</a>
-                    </li>                   
-                    <li>
-                        <a href="./index.html#about">Sobre nosotros</a>
-                    </li>
-                    <li>
-                        <a href="./index.html#contact">Contacto</a>
-                    </li>                 
+                        	<a href="#page-top"></a>
+	                    </li>
+	                    <li>
+	                        <a href="./login.html">Login</a>
+	                    </li>
+	                    <li class="active">
+	                        <a href="#page-top">Productos</a>
+	                    </li>
+	                    <li>
+	                        <a href="./servicios.html">Servicios</a>
+	                    </li>                   
+	                    <li>
+	                        <a href="./index.html#about">Sobre nosotros</a>
+	                    </li>
+	                    <li>
+	                        <a href="./index.html#contact">Contacto</a>
+	                    </li>                 
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -85,119 +86,165 @@
             <!-- /.container -->
         </nav class="navbar">
 
-        <!-- Intro Section -->
-		<section id="comparative" class="container comparative-section">
-			<h2></h2>
-			<div class="row">
-				<div class="col-lg-4">
-					<h3>Genoma Completo</h3>
-					<img class="fluid-img compare-images" src="./img/GenomaCompleto.png"></img>				
-					<p><small>3 millones de pares de bases</small></p>
-					<p>Toda la información de tu ADN, zonas codificantes y zonas reguladoras</p>
-					<p><a class="btn btn-secondary" href="#genoma" role="button">Saber más</a></p>
-				</div>
-				<div class="col-lg-4">
-					<h3>Exoma Completo</h3>
-					<img class="compare-images" src="./img/ExomaCompleto.png"></img>
-					<p><small>~ 1,5% del genoma</small></p>
-					<p>Región codificante del genoma, la que se traduce a proteínas</p>
-					<p><a class="btn btn-secondary" href="#exoma" role="button">Saber más</a></p>
-				</div>
-				<div class="col-lg-4">
-					<h3>Análisis personalizdos</h3>
-					<img class="compare-images" src="./img/EstudiosPersonalizados.png"></img>			
-					<p><small>Paneles de genes</small></p>
-					<p>Genes concretos implicados en el desarrollo de patologías raras y/o cánceres</p>
-					<p><a class="btn btn-secondary" href="#analisis" role="button">Saber más</a></p>
-				</div>
-			</div>
-		</section>
+        <div class="container-fluid main-section">
+		    <div class="row">
+		        <div class="col-md-3 col-xs-1 p-l-0 p-r-0 collapse in" id="sidebar">
+		            <div class="list-group panel">
+		            	<a href="#menu1" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><span class="hidden-sm-down"><h3>¿Cuánto quieres saber?</h3></span></a>
+		            	<div class="collapse" id="menu1">
+			                <a href="#menu1-1" class="list-group-item collapsed" data-toggle="collapse" data-parent="#menu1" aria-expanded="false"><span class="hidden-sm-down"><h3>Genoma completo</h3></span></a>
+			                <div class="collapse" id="menu1-1">
+			                    <a href="#" class="list-group-item" data-parent="#menu1-1">
+									<div>Toda la información de tu ADN, zonas codificantes y zonas reguladoras</div>
+									<div><small>(~ 3 mil millones de pares de bases)</small></div>
+			                    	<div><img class="compare-images" src="./img/GenomaCompleto.png"></img></div>						
+			                    </a>
+			                </div>
+			                <a href="#menu1-2" class="list-group-item collapsed" data-toggle="collapse" data-parent="#menu1" aria-expanded="false"><span class="hidden-sm-down"><h3>Exoma completo</h3></span></a>
+			                <div class="collapse" id="menu1-2">
+			                    <a href="#" class="list-group-item" data-parent="#menu1-2">    
+			                    	<div>Región codificante del genoma, la que se traduce a proteínas</div>
+									<div><small>(~ 1,5% del genoma)</small></div>
+			                    	<div><img class="compare-images" src="./img/ExomaCompleto.png"></img></div>
+								</a>
+			                </div>
+			                <a href="#menu1-3" class="list-group-item collapsed" data-toggle="collapse" data-parent="#menu1" aria-expanded="false"><span class="hidden-sm-down"><h3>Análisis Personalizados</h3></span></a>
+			                <div class="collapse" id="menu1-3">
+			                    <a href="#" class="list-group-item" data-parent="#menu1-3">
+				                    <div>Genes concretos implicados en el desarrollo de patologías raras y/o cánceres</div>
+									<div><small>Paneles de genes</small></div>
+				                    <div><img class="compare-images" src="./img/EstudiosPersonalizados.png"></img></div>
+				                </a>
+			                </div>
+			            </div>
+		                <a href="#menu2" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><span class="hidden-sm-down"><h3>¿Cómo funciona?</h3></span></a>	                
+		            </div>
+		        </div>
+		        <main class="col-md-9 col-xs-11 p-l-2 p-t-2">
+		        	<!-- Comparative section -->
+			        <section id="comparative" class="container comparative-section">
+			            <div class="page-header">
+			                <h2>¿Cuánto quieres saber?</h2>
+			            </div>
+			            <div class="row">
+							<div class="col-lg-4">
+								<h3>Genoma Completo</h3>
+								<img class="fluid-img compare-images" src="./img/GenomaCompleto.png"></img>				
+								<p><small>3 mil millones de pares de bases</small></p>
+								<p>Toda la información de tu ADN, zonas codificantes y zonas reguladoras</p>
+								<p><a class="btn btn-secondary" href="#genoma" role="button">Saber más</a></p>
+							</div>
+							<div class="col-lg-4">
+								<h3>Exoma Completo</h3>
+								<img class="compare-images" src="./img/ExomaCompleto.png"></img>
+								<p><small>~ 1,5% del genoma</small></p>
+								<p>Región codificante del genoma, la que se traduce a proteínas</p>
+								<p><a class="btn btn-secondary" href="#exoma" role="button">Saber más</a></p>
+							</div>
+							<div class="col-lg-4">
+								<h3>Análisis personalizdos</h3>
+								<img class="compare-images" src="./img/EstudiosPersonalizados.png"></img>			
+								<p><small>Paneles de genes</small></p>
+								<p>Genes concretos implicados en el desarrollo de patologías raras y/o cánceres</p>
+								<p><a class="btn btn-secondary" href="#analisis" role="button">Saber más</a></p>
+							</div>
+						</div>
+					</section>
 
-		<!-- Schedule Section -->
-		<section id="schedule" class="container schedule-section2">
-			<h2>Nuestro producto en 7 sencillos pasos:</h2>
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-1">    
-					<ul class="timeline2">
-						<li class="timeline2-inverted">
-							<div class="timeline2-badge one">
-								<h2>1</h2>
-							</div>		
-							<div class="timeline2-panel">
-								<div class="timeline2-body">
-									<p class="timeline2-title">Elige un producto y solicita tu servicio online</p>
-								</div>
+					<!-- Schedule Section -->
+					<section id="schedule" class="container schedule-section2">
+						<div class="page-header">
+							<h2>Nuestro producto en 7 sencillos pasos:</h2>
+						</div>
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-1">    
+								<ul class="timeline2">
+									<li class="timeline2-inverted">
+										<div class="timeline2-badge one">
+											<h2>1</h2>
+										</div>		
+										<div class="timeline2-panel">
+											<div class="timeline2-body">
+												<p class="timeline2-title">Elige un producto y solicita tu servicio online</p>
+											</div>
+										</div>
+									</li>
+									<li class="timeline2-inverted">
+										<div class="timeline2-badge two">
+											<h2>2</h2>
+										</div>
+										<div class="timeline2-panel">
+											<div class="timeline2-body">
+												<p class="timeline2-title">Tu médico habitual o uno asignado te dará consejo genético</p>
+											</div>
+										</div>
+									</li>
+									<li class="timeline2-inverted">
+										<div class="timeline2-badge three">
+											<h2>3</h2>
+										</div>
+										<div class="timeline2-panel">
+											<div class="timeline2-body">
+												<p class="timeline2-title">Te enviamos el kit de recogida de muestra de saliva</p>
+											</div>
+										</div>
+									</li>
+									<li class="timeline2-inverted">
+										<div class="timeline2-badge four">
+											<h2>4</h2>
+										</div>
+										<div class="timeline2-panel">
+											<div class="timeline2-body">
+												<p class="timeline2-tittle">Recogemos la muestra</p>
+											</div>
+										</div>
+									</li>
+									<li class="timeline2-inverted">
+										<div class="timeline2-badge five">
+											<h2>5</h2>
+										</div>
+										<div class="timeline2-panel">
+											<div class="timeline2-body">
+												<p class="timeline2-title">Obtenemos la secuenciación de tu ADN</p>
+											</div>
+										</div>
+									</li>
+									<li class="timeline2-inverted">
+										<div class="timeline2-badge six">
+											<h2>6</h2>
+										</div>
+										<div class="timeline2-panel">
+											<div class="timeline2-body">
+												<p class="timeline2-title">Procesamos los datos de tu genoma y generamos tu informe online</p>
+											</div>
+										</div>
+									</li>
+									<li class="timeline2-inverted">
+										<div class="timeline2-badge seven">
+											<h2>7</h2>
+										</div>
+										<div class="timeline2-panel">
+											<div class="timeline2-body">
+												<p class="timeline2-title">Accede a toda tu información y revisa tus resultados con el médico</p>
+											</div>
+										</div>
+									</li>
+								</ul>
 							</div>
-						</li>
-						<li class="timeline2-inverted">
-							<div class="timeline2-badge two">
-								<h2>2</h2>
+							<div class="col-lg-3 img-col">
+								<div class="row"><img src="img/Iconos_servicios/dna.png" class="fluid-img adn-img"></img></div>
+			                	<div class="row"><img src="img/Iconos_servicios/download.png" class="fluid-img arrow-img"></img></div>
+			                	<div class="row"><img src="img/Iconos_servicios/analytics.png" class="fluid-img pc-img"></img></div>
 							</div>
-							<div class="timeline2-panel">
-								<div class="timeline2-body">
-									<p class="timeline2-title">Tu médico habitual o uno asignado te dará consejo genético</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline2-inverted">
-							<div class="timeline2-badge three">
-								<h2>3</h2>
-							</div>
-							<div class="timeline2-panel">
-								<div class="timeline2-body">
-									<p class="timeline2-title">Te enviamos el kit de recogida de muestra de saliva</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline2-inverted">
-							<div class="timeline2-badge four">
-								<h2>4</h2>
-							</div>
-							<div class="timeline2-panel">
-								<div class="timeline2-body">
-									<p class="timeline2-tittle">Recogemos la muestra</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline2-inverted">
-							<div class="timeline2-badge five">
-								<h2>5</h2>
-							</div>
-							<div class="timeline2-panel">
-								<div class="timeline2-body">
-									<p class="timeline2-title">Obtenemos la secuenciación de tu ADN</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline2-inverted">
-							<div class="timeline2-badge six">
-								<h2>6</h2>
-							</div>
-							<div class="timeline2-panel">
-								<div class="timeline2-body">
-									<p class="timeline2-title">Procesamos los datos de tu genoma y generamos tu informe online</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline2-inverted">
-							<div class="timeline2-badge seven">
-								<h2>7</h2>
-							</div>
-							<div class="timeline2-panel">
-								<div class="timeline2-body">
-									<p class="timeline2-title">Accede a toda tu información y revisa tus resultados con el médico</p>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="col-lg-3 img-col">
-					<div class="row"><img src="img/Iconos_servicios/dna.png" class="fluid-img adn-img"></img></div>
-                	<div class="row"><img src="img/Iconos_servicios/download.png" class="fluid-img arrow-img"></img></div>
-                	<div class="row"><img src="img/Iconos_servicios/analytics.png" class="fluid-img pc-img"></img></div>
-				</div>
-			</div>
-		</section>
+						</div>
+					</section>
+		        </main>
+		    </div>
+		</div>
+       
+       
+
+		
 		
 		<!-- GenomaCompleto Section -->
 		<section id="genoma">
@@ -261,6 +308,12 @@
 				</div>
 			</div>
 		</section>
+
+
+
+        
+
+        
 		
 		
 
@@ -271,7 +324,7 @@
         <script src="js/jquery.backstretch.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/grayscale.js"></script>
-        
+        <script src="js/sidebar.js"></script>
         <script src="js/script.js"></script>
 
     </body>

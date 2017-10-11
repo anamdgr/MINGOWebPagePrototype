@@ -1,7 +1,8 @@
 .timeline2 {
     list-style: none;
-    padding: 20px 0 20px;
+    padding: 20px 0 0px;
     position: relative;
+    margin-bottom: 0px;
 }
 .schedule-section2 .col {
     vertical-align: middle !important;
@@ -83,13 +84,13 @@
 
     .timeline2 > li > .timeline2-panel:after {
         position: absolute;
-        top: 14px;
+        top: 5px;
         right: -14px;
         display: inline-block;
-        border-top: 14px solid transparent;
-        border-left: 14px solid #fff;
+        border-top: 18px solid transparent;
+        border-left: 17px solid #fff;
         border-right: 0 solid #fff;
-        border-bottom: 14px solid transparent;
+        border-bottom: 18px solid transparent;
         content: " ";
     }
 
@@ -172,6 +173,7 @@
 .timeline2-body > p,
 .timeline2-body > ul {
     margin-bottom: 0;
+    font-size: 16px !important;
 }
 
 .timeline2-body > p + p {
