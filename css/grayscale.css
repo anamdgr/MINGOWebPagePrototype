@@ -84,7 +84,7 @@ a:focus {
 }
 .mingo-logo {
   vertical-align: bottom !important;
-  height: 200px;
+  width: 180px;
   margin-top: 100px;
   margin-bottom: 0px;
 }
@@ -152,6 +152,13 @@ a:focus {
 .intro .intro-body {
   display: table-cell;
   vertical-align: bottom;
+}
+.intro .intro-body h2 {
+  font-family: Lato !important;
+  font-size: 28px !important;
+  color: #0b2c55;
+  margin-top: -40px;
+  margin-left: 60px;
 }
 .intro .intro-body h3 {
   color: #008080 !important;
