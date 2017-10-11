@@ -277,6 +277,11 @@ div.avatar {
     background-size: 100% auto;
 	background-color: grey;
 }
+
+#titulo h2 {
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
 .about1-section{
   width: 100%;
   padding-top: 80px;
@@ -299,9 +304,11 @@ div.avatar {
   color: white;
 }
 .about3-section{
-  padding-top: 50px;
   width: 100%;
   overflow-x:hidden;
+}
+.about3-section .col-lg-8{
+  padding-top: 100px;
 }
 .adn-row {
   padding: 0px !important;
