@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- Theme CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/grayscale-about.css" rel="stylesheet">
     <link href="css/form-elements.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/timeline.css" rel="stylesheet">
+    <link href="css/timeline2.css" rel="stylesheet">
     <link href="css/accordion.css" rel="stylesheet">
 
     <!-- Favicon -->
@@ -48,8 +48,8 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <img class="fluid-img mingo-icon" src="./img/MINGO_icon.png"></img> MINGO <small><span class="light">bioinformatics</span></small>
+                <a class="navbar-brand page-scroll" href="./index.html">
+                    <img class="fluid-img mingo-icon" src="./img/MINGO_icon.png"></img> MINGO <span class="light">bioinformatics</span>
                 </a>
             </div>
 
@@ -68,12 +68,12 @@
                     </li>
                     <li>
                         <a href="./servicios.html">Servicios</a>
-                    </li>                   
-                    <li>
-                        <a href="./about.html">Sobre nosotros</a>
+                    </li>
+                    <li class="active">
+                        <a class="page-scroll" href="#page-top">Sobre nosotros</a>
                     </li>
                     <li>
-                        <a href="./contact.html">Contacto</a>
+                        <a class="page-scroll" href="#contact">Contacto</a>
                     </li>                    
                 </ul>
             </div>
@@ -82,113 +82,7 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h3>Tu salud, de forma preventiva y personalizada</h3>
-                    </div>
-                    <div class="col-md-4 col-logo">
-                        <p><img class="fluid-img mingo-logo" src="./img/logo.png"></img></p>
-                    </div>
-                </div>
-                <div class="row go-down-row">
-                    <a href="#about" class="btn btn-circle page-scroll">
-                        <i class="fa fa-angle-double-down animated"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Intro Section -->
-    <section id="comparative" class="container comparative-section">
-        <h2>¿Cuanta información sobre tu ADN necesitas?</h2>
-        <div class="row">
-            <div class="col-lg-4">
-                <img class="fluid-img compare-images" src="./img/GenomaCompleto.png"></img>
-                <h3>Genoma Completo</h3>
-                <p><a class="btn btn-secondary" href="./productos.html" role="button">Saber más</a></p>
-            </div>
-            <div class="col-lg-4">
-                <img class="compare-images" src="./img/ExomaCompleto.png"></img>
-                <h3>Exoma Completo</h3>
-                <p><a class="btn btn-secondary" href="./productos.html" role="button">Saber más</a></p>
-            </div>
-            <div class="col-lg-4">
-                <img class="compare-images" src="./img/EstudiosPersonalizados.png"></img>
-                <h3>Análisis personalizdos</h3>
-                <p><a class="btn btn-secondary" href="./productos.html" role="button">Saber más</a></p>
-            </div>
-        </div>
-    </section>
     
-    <!-- Schedule Section -->
-    <section id="schedule" class="container schedule-section text-center">
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1">
-                <h2>Invierte en tu tranquilidad</h2>   
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-panel">
-                            <div class="timeline-body">
-                                <p class="timeline-title">¿Problemas en la digestión de algunos alimentos?</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-panel">
-                            <div class="timeline-body">
-                                <p class="timeline-title">¿Por qué el mismo fármaco tiene efectos diferentes según el paciente?</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-panel">
-                            <div class="timeline-body">
-                                <p class="timeline-title">¿Soy portador de alguna enfermedad hereditaria?</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-panel">
-                            <div class="timeline-body">
-                                <p class="timeline-tittle">¿Puede mi bebé sufrir una enferdad rara?</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-panel">
-                            <div class="timeline-body">
-                                <p class="timeline-title">¿Tengo riesgo de sufrir cáncer de mama?</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <p></p>
-                <h2>... nosotros hallamos tus respuestas</h2> 
-            </div>
-        </div>
-    </section>
-    <!-- About Section -->
-    <section id="about" class="container content-section">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 content-col">
-                <h2>¿Qué hacemos?</h2>
-                <p>Realizamos análisis genéticos tanto de exoma como de genoma para darte toda la información que necesitas sobre ti mismo. Además, actualizamos esa información durante toda tu vida para que tengas acceso a todos los avances en salud.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Promo Section -->
-    <section id="promo" class="container promo-section text-center">
-        <div class="row">            
-            <p>activa tu plan de medicina preventiva<br> para ti y para los tuyos</p>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
         <div class="row">
@@ -198,7 +92,7 @@
                 
             </div>
             <div class="col-lg-6">
-                <img class="fluid-img mingo-logo-inverso" src="./img/logo_inverso-t.png"></img>
+                <img class="fluid-img mingo-logo-inverso" src="./img/logo_inverso.png"></img>
                 <div class="mapa-texto">
                     <p>La Farola - Andalucía Open Future<br><small class="text-muted"> (Calle Concejal Muñoz Cerván, 3, 29004 Málaga)</small></p>
                     <p><a href="mailto:info@mingobioinformatics.com">info@mingobioinformatics.com</a></p>
@@ -219,13 +113,42 @@
         </div>
     </section>
 
+    <!-- Form Section -->
+    <section id="application" class="container apply-section">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Dirección de correo electróncio</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">¿Qué tipo de cliente eres?</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Particular</option>
+                            <option>Médico</option>
+                            <option>Clínica</option>
+                            <option>Distribuidor</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Escribe cualquier solicitud, pregunta, o sugerencia</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="btn-form form-group">
+                        <a href="#" class="btn solicitar" role="button"><small><span class="light">Enviar</span></small></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <div class="row">
-                <p>Copyright &copy; 2017 MINGO Bioinformatics</p>
-            </div>            
+            <p>Copyright &copy; 2017 MINGO Bioinformatics</p>
         </div>
     </footer>
 
