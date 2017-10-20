@@ -1,0 +1,68 @@
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);;
+  font-family: 'GlacialIndifferenceRegular'; 
+  text-transform: uppercase;
+  background-color: #0b2c55;
+  letter-spacing: 1px;
+}
+.navbar-custom .navbar-toggle {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+}
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:active {
+  outline: none;
+}
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+  text-transform: none !important;
+}
+.navbar-custom .navbar-brand:focus {
+  outline: none;
+}
+.mingo-icon {
+  height: 30px;
+  float: left;
+  margin-top: -5px !important;
+  margin-right: 10px;
+  border: 1px solid white;
+}
+.navbar-custom a {
+  color: white;
+}
+.navbar-custom a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.navbar-custom .nav li a {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.navbar-custom .nav li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  background-color: transparent;
+}
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+  outline: none;
+  background-color: transparent;
+}
+.navbar-custom .nav li.active {
+  outline: none;
+}
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar-custom .nav li.active a:hover {
+  color: white;
+}
+@media (min-width: 768px) {
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: #0b2c55;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}

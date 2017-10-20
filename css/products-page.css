@@ -1,0 +1,67 @@
+.main-section {
+  margin-top: 50px !important;
+}
+.page-header {
+  margin-bottom: 80px;
+}
+.comparative-section {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: white;
+}
+.comparative-section h3 {
+  color: #0B2C55 !important;
+  font-size: 26px;
+}
+.comparative-section .col-lg-4 {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.comparative-section .btn {
+  background-color: #008080;
+}
+.compare-images {
+    color: #fff;
+    width: 130%;
+    text-align: center;
+    background-color: transparent;
+    margin-top: -40px;
+    margin-bottom: -120px;
+    margin-left: 10px;
+}
+.schedule-section {
+  width: 100%;
+  padding: 50px 200px 50px 200px;
+  background-color: #F7F8F8;
+}
+.schedule-section .row{
+  margin-top: -50px;
+}
+.schedule-section .img-col{
+  margin-top: 50px;
+}
+.adn-img {
+  height: 100px;
+  margin: 50px;
+}
+.arrow-img {
+  height: 100px;
+  margin: 50px;
+}
+.pc-img {
+  height: 100px;
+  margin: 50px;
+}
+.tipe-section {
+  padding-top: 30px;
+}
+@media (min-width: 767px) {
+  .content-section {
+    padding-top: 80px;
+  }
+  .schedule-section {
+    padding-top: 80px;
+  }
+}

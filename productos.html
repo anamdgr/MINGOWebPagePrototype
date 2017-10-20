@@ -19,27 +19,21 @@
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lato" type="text/css"/>
 
         <!-- Theme CSS -->
-        <link href="css/grayscale-login.css" rel="stylesheet">
-        <link href="css/form-elements.css" rel="stylesheet">
+        <link href="css/products-page.css" rel="stylesheet">
+        <link href="css/navbar-static.css" rel="stylesheet">
+        <link href="css/sidebar-hidden.css" rel="stylesheet">
+        <link href="css/buttons.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-		<link href="css/timeline2.css" rel="stylesheet">
-		<link href="css/accordion.css" rel="stylesheet">
-		<link href="css/sidebar-hidden.css" rel="stylesheet">
+		<link href="css/text-boxes.css" rel="stylesheet">
+		<link href="css/contact-section.css" rel="stylesheet">
+    	<link href="css/footer.css" rel="stylesheet">
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="./img/favicon.png" />
-
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-        <!-- D3.js -->
-        <script type="text/javascript" src="d3/d3.min.js"></script>
 
     </head>
     
@@ -53,7 +47,7 @@
                         Menu <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand page-scroll" href="./index.html">
-                        <img class="fluid-img mingo-icon" src="./img/MINGO_icon.png"></img> MINGO <small><span class="light">bioinformatics</span></small>
+                        <img class="fluid-img mingo-icon" src="./img/MINGO_icon.png"></img><span class="lato"> MINGO </span><small><span class="light">bioinformatics</span></small>
                     </a>
                 </div>
 
@@ -68,7 +62,7 @@
 	                        <a href="./login.html">Login</a>
 	                    </li>
 	                    <li class="active">
-	                        <a class="page-scroll" href="#page-top">Productos</a>
+	                        <a href="./productos.html">Productos</a>
 	                    </li>
 	                    <li>
 	                        <a href="./servicios.html">Servicios</a>
@@ -98,7 +92,7 @@
 	            </div>
 	            <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
 	                <ul class="nav navbar-nav">
-	                    <li class="active">
+	                    <li>
 	                        <a class="page-scroll" href="#genoma">Genoma</span><span class="pull-right hidden-xs showopacity icon-image-1"></span></a>
 	                    </li>
 	                    <li>
@@ -112,14 +106,10 @@
 	        </div>
 	    </nav>		
 
-	    <script type="text/javascript">
-	    
-	    </script>        
-
     	<div class="main">
 
 	        	<!-- Comparative section -->
-		        <section id="comparative" class="container comparative-section">
+		        <section id="comparative" class="container-fluid comparative-section">
 		            <div class="page-header">
 		                <h2>¿Cuánto quieres saber?</h2>
 		            </div>
@@ -139,7 +129,7 @@
 							<p><a class="btn btn-secondary" href="#exoma" role="button">Saber más</a></p>
 						</div>
 						<div class="col-lg-4">
-							<h3>Análisis personalizdos</h3>
+							<h3>Análisis personalizados</h3>
 							<img class="compare-images" src="./img/EstudiosPersonalizados.png"></img>			
 							<p><small>Paneles de genes</small></p>
 							<p>Genes concretos implicados en el desarrollo de patologías raras y/o cánceres</p>
@@ -149,80 +139,80 @@
 				</section>
 
 				<!-- Schedule Section -->
-				<section id="schedule" class="container schedule-section2">
+				<section id="schedule" class="container-fluid schedule-section">
 					<div class="page-header">
 						<h2>Nuestro producto en 7 sencillos pasos</h2>
 					</div>
 					<div class="row">
 						<div class="col-lg-8 col-lg-offset-1">    
-							<ul class="timeline2">
-								<li class="timeline2-inverted">
-									<div class="timeline2-badge one">
+							<ul class="box">
+								<li class="box-inverted">
+									<div class="box-badge one">
 										<h2>1</h2>
 									</div>		
-									<div class="timeline2-panel">
-										<div class="timeline2-body">
-											<p class="timeline2-title">Elige un producto y solicita tu servicio online</p>
+									<div class="box-panel">
+										<div class="box-body">
+											<p class="box-title">Elige un producto y solicita tu servicio online</p>
 										</div>
 									</div>
 								</li>
-								<li class="timeline2-inverted">
-									<div class="timeline2-badge two">
+								<li class="box-inverted">
+									<div class="box-badge two">
 										<h2>2</h2>
 									</div>
-									<div class="timeline2-panel">
-										<div class="timeline2-body">
-											<p class="timeline2-title">Un médico te da consejo genético y extrae tu muestra de saliva</p>
+									<div class="box-panel">
+										<div class="box-body">
+											<p class="box-title">Un médico te da consejo genético y extrae tu muestra de saliva</p>
 										</div>
 									</div>
 								</li>
-								<li class="timeline2-inverted">
-									<div class="timeline2-badge three">
+								<li class="box-inverted">
+									<div class="box-badge three">
 										<h2>3</h2>
 									</div>
-									<div class="timeline2-panel">
-										<div class="timeline2-body">
-											<p class="timeline2-title">El laboratorio secuencia tu ADN</p>
+									<div class="box-panel">
+										<div class="box-body">
+											<p class="box-title">El laboratorio secuencia tu ADN</p>
 										</div>
 									</div>
 								</li>
-								<li class="timeline2-inverted">
-									<div class="timeline2-badge five">
+								<li class="box-inverted">
+									<div class="box-badge five">
 										<h2>4</h2>
 									</div>
-									<div class="timeline2-panel">
-										<div class="timeline2-body">
-											<p class="timeline2-title">Obtenemos la secuenciación y procesamos tus datos</p>
+									<div class="box-panel">
+										<div class="box-body">
+											<p class="box-title">Obtenemos la secuenciación y procesamos tus datos</p>
 										</div>
 									</div>
 								</li>
-								<li class="timeline2-inverted">
-									<div class="timeline2-badge six">
+								<li class="box-inverted">
+									<div class="box-badge six">
 										<h2>5</h2>
 									</div>
-									<div class="timeline2-panel">
-										<div class="timeline2-body">
-											<p class="timeline2-title">Generamos tu informe online</p>
+									<div class="box-panel">
+										<div class="box-body">
+											<p class="box-title">Generamos tu informe online</p>
 										</div>
 									</div>
 								</li>
-								<li class="timeline2-inverted">
-									<div class="timeline2-badge seven">
+								<li class="box-inverted">
+									<div class="box-badge seven">
 										<h2>6</h2>
 									</div>
-									<div class="timeline2-panel">
-										<div class="timeline2-body">
-											<p class="timeline2-title">Accede a toda tu información y revisa tus resultados con el médico</p>
+									<div class="box-panel">
+										<div class="box-body">
+											<p class="box-title">Accede a toda tu información y revisa tus resultados con el médico</p>
 										</div>
 									</div>
 								</li>
-								<li class="timeline2-inverted">
-									<div class="timeline2-badge three">
+								<li class="box-inverted">
+									<div class="box-badge three">
 										<h2>7</h2>
 									</div>
-									<div class="timeline2-panel">
-										<div class="timeline2-body">
-											<p class="timeline2-title">Recibe actualizaciones y notificaciones</p>
+									<div class="box-panel">
+										<div class="box-body">
+											<p class="box-title">Recibe actualizaciones y notificaciones</p>
 										</div>
 									</div>
 								</li>
@@ -236,11 +226,9 @@
 						</div>
 					</div>
 				</section>
-		    </main>
 
-		
-		<!-- GenomaCompleto Section -->
-		<section id="genoma" class="tipe-section">
+				<!-- GenomaCompleto Section -->
+		<section id="genoma" class="container-fluid tipe-section">
 			<div class="row">
 				<div class="page-header">
 					<h2>Genoma completo</h2>
@@ -255,8 +243,9 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- Exoma Section -->
-		<section id="exoma" class="tipe-section">
+		<section id="exoma" class="container-fluid tipe-section">
 			<div class="row">
 				<div class="page-header">
 					<h2>Exoma completo</h2>
@@ -273,8 +262,9 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- Analisis Section -->
-		<section id="analisis" class="tipe-section">
+		<section id="analisis" class="container-fluid tipe-section">
 			<div class="row">
 				<div class="page-header">
 					<h2>Ańálisis personalizados</h2>
@@ -289,13 +279,14 @@
 				</div>
 			</div>
 		</section>
+		    </main>
 
-
-
-        
-
-        
-		
+		<!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; 2017 <span class="lato"> MINGO </span>bioinformatics</p>
+        </div>
+    </footer>
 		
 
 		
@@ -307,6 +298,35 @@
         <script src="js/grayscale.js"></script>
         <script src="js/sidebar.js"></script>
         <script src="js/script.js"></script>
+
+        <script type="text/javascript">
+		    $(document).ready(function() {
+		        const getY = id => document.getElementById(id).getBoundingClientRect().y
+		        const removeAll = () => Object.values($('.navbar-nav')[1].children).forEach( e => e.removeAttribute('class'))
+		        const a = $('.navbar-nav')[1].children[0]
+		        const b = $('.navbar-nav')[1].children[1]
+		        const c = $('.navbar-nav')[1].children[2]
+		        let curr = null
+		        const setCurrAndActivate = (el) => {
+		            removeAll()
+		            curr=el
+		            el.setAttribute('class', 'active')
+		        }
+		        window.addEventListener('scroll', function(e) {
+		            let genY = getY('genoma')
+		            let exoY = getY('exoma')
+		            let panY = getY('analisis')
+		            genom = genY >=0 && genY < 120
+		            exom = exoY >=0 && exoY < 120
+		            panel = panY >=0 && panY < 120
+		            if ( genom ) setCurrAndActivate(a)
+		                if ( exom ) setCurrAndActivate(b)
+		                    if ( panel ) setCurrAndActivate(c)
+		                        console.log({curr, genom, exom, panel})
+		        })
+		        
+		    })
+		</script>
 
     </body>
 

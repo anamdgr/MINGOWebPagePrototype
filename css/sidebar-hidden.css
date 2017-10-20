@@ -31,11 +31,13 @@
       margin-left: 200px;
     }
 
-    nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    nav.sidebar.navbar.sidebar>.container .navbar-brand, 
+    .navbar>.container-fluid .navbar-brand {
       margin-left: 0px;
     }
 
-    nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+    nav.sidebar .navbar-brand, 
+    nav.sidebar .navbar-header{
       text-align: center;
       width: 100%;
       margin-left: 0px;
@@ -54,13 +56,14 @@
     nav.sidebar .navbar-nav > li{
       border-bottom: 1px #e5e5e5 solid;
     }
-    nav.sidebar .navbar-nav > li:active > a{
-      background: rgba(255,255,255,0.3);
-      color: #0B2C55;
+    nav.sidebar .navbar-nav > li:active > a,
+    nav.sidebar .navbar-nav > li:hover > a {
+      background: rgba(255,255,255,0.9) !important;
+      color: #0B2C55 !important;
     }
-    nav.sidebar >li >a:hover {
-      background: rgba(255,255,255,0.3);
-      color: #0B2C55;
+    nav.sidebar .navbar-nav > li.active > a {
+      background: rgba(255,255,255,0.9) !important;
+      color: #0B2C55 !important;
     }
 
     nav.sidebar .navbar-nav .open .dropdown-menu {
@@ -74,7 +77,8 @@
       box-shadow: none;
     }
 
-    nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+    nav.sidebar .navbar-collapse, 
+    nav.sidebar .container-fluid{
       padding: 0 0px 0 0px;
     }
 
@@ -118,11 +122,6 @@
     nav.sidebar .forAnimate{
       opacity: 1;
     }
-  }
-
-  nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
-    color: #CCC;
-    background-color: transparent;
   }
 
   nav:hover .forAnimate{

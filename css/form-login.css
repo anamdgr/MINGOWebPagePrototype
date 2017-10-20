@@ -1,0 +1,138 @@
+.form-box {
+	padding: 40px 0px 40px 0px;
+}
+.form-row {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.form-top {
+	overflow: hidden;
+	padding: 0 25px 0 25px;
+	background: #C2CAD5;
+	background: rgba(0, 0, 0, 0.2);
+	-moz-border-radius: 4px 4px 0 0; 
+	-webkit-border-radius: 4px 4px 0 0; 
+	border-radius: 4px 4px 0 0;
+	text-align: left;
+	border-bottom: #25a18e 1px solid;
+}
+
+.form-top-left {
+	float: left;
+	width: 75%;
+}
+
+.form-top-left h3 {
+	color: #008080; 
+	margin-top: 25px;
+	margin-bottom: 0px;
+}
+
+.form-top-right {
+	float: left;
+	width: 25%;
+	padding-top: 5px;
+	font-size: 50px;
+	color: #25a18e;
+	line-height: 70px;
+	text-align: right;
+	opacity: 0.3;
+}
+
+.form-bottom {
+	padding: 15px 15px 15px 15px;
+	background: #C2CAD5;
+	background: rgba(0, 0, 0, 0.2);
+	-moz-border-radius: 0 0 4px 4px; 
+	-webkit-border-radius: 0 0 4px 4px; 
+	border-radius: 0 0 4px 4px;
+	text-align: left;
+	color: #0b2c55;
+}
+
+.form-bottom form textarea {
+	height: 100px;
+}
+
+.form-bottom form button.btn {
+	width: 100%;
+	background-color: #008080 !important;
+}
+
+.form-bottom form a.btn {
+  width: 100%;
+  background-color: #008080 !important;
+}
+
+.form-bottom form .input-error {
+	border-color: #de615e;
+}
+
+input[type="text"], 
+input[type="password"], 
+textarea, 
+textarea.form-control {
+	height: 50px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #fff;
+    border: 3px solid #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #888;
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px; 
+    border-radius: 4px;
+    -moz-box-shadow: none; 
+    -webkit-box-shadow: none; 
+    box-shadow: none;
+    -o-transition: all .3s; 
+    -moz-transition: all .3s; 
+    -webkit-transition: all .3s; 
+    -ms-transition: all .3s; 
+    transition: all .3s;
+}
+
+textarea, 
+textarea.form-control {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 30px;
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+textarea:focus, 
+textarea.form-control:focus {
+	outline: 0;
+	background: #fff;
+    border: 3px solid #fff;
+    -moz-box-shadow: none; 
+    -webkit-box-shadow: none; 
+    box-shadow: none;
+}
+
+input[type="text"]:-moz-placeholder, 
+input[type="password"]:-moz-placeholder, 
+textarea:-moz-placeholder, 
+textarea.form-control:-moz-placeholder { 
+	color: #888; 
+}
+
+input[type="text"]:-ms-input-placeholder, 
+input[type="password"]:-ms-input-placeholder, 
+textarea:-ms-input-placeholder, 
+textarea.form-control:-ms-input-placeholder { 
+	color: #888; 
+}
+
+input[type="text"]::-webkit-input-placeholder, 
+input[type="password"]::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder, 
+textarea.form-control::-webkit-input-placeholder { 
+	color: #888; 
+}

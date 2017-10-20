@@ -19,24 +19,21 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lato" type="text/css"/>
 
     <!-- Theme CSS -->
-    <link href="css/grayscale-services.css" rel="stylesheet">
-    <link href="css/form-elements.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/timeline2.css" rel="stylesheet">
-    <link href="css/accordion.css" rel="stylesheet">
+    <link href="css/services-page.css" rel="stylesheet">
+    <link href="css/navbar-static.css" rel="stylesheet">
     <link href="css/sidebar-hidden.css" rel="stylesheet">
+    <link href="css/buttons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/text-boxes.css" rel="stylesheet">
+    <link href="css/contact-section.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./img/favicon.png" />
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -50,7 +47,7 @@
                     Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="./index.html">
-                    <img class="fluid-img mingo-icon" src="./img/MINGO_icon.png"></img> MINGO <small><span class="light">bioinformatics</span></small>
+                    <img class="fluid-img mingo-icon" src="./img/MINGO_icon.png"></img><span class="lato"> MINGO </span><small><span class="light">bioinformatics</span></small>
                 </a>
             </div>
 
@@ -114,59 +111,57 @@
         </div>
     </nav>
 
-    <script type="text/javascript">
     
-    </script>
 
 <div class="main">
 
     <!-- Image section -->
-    <section id="particular" class="container particular-section">
+    <section id="particular" class="container-fluid particular-section">
         <div class="intro">
             <h2>Particulares</h2>
             <p class="explain">Invierte en tu tranquilidad descubriendo toda tu información genética. <br>Tú decides cuánto quieres saber y cuándo. Activa tu plan de <br>medicina preventiva para tí y para los tuyos.</p>
         </div>        
         <div class="row">
             <div class="col col-lg-6">   
-                <ul class="timeline2">
-                    <li class="timeline2">
-                        <div class="timeline2-panel">
-                            <div class="timeline2-body">
-                                <p class="timeline2-title">Solicitud de análisis online</p>
+                <ul class="box">
+                    <li class="box">
+                        <div class="box-panel">
+                            <div class="box-body">
+                                <p class="box-title">Solicitud de análisis online</p>
                             </div>
                         </div>
                     </li>
-                    <li class="timeline2">
-                        <div class="timeline2-panel">
-                            <div class="timeline2-body">
-                                <p class="timeline2-title">Toma de muestras sencilla</p>
+                    <li class="box">
+                        <div class="box-panel">
+                            <div class="box-body">
+                                <p class="box-title">Toma de muestras sencilla</p>
                             </div>
                         </div>
                     </li>
-                    <li class="timeline2-">
-                        <div class="timeline2-panel">
-                            <div class="timeline2-body">
-                                <p class="timeline2-title">Área de usuario para gestionar toda tu información</p>
+                    <li class="box-">
+                        <div class="box-panel">
+                            <div class="box-body">
+                                <p class="box-title">Área de usuario para gestionar toda tu información</p>
                             </div>
                         </div>
                     </li>
-                    <li class="timeline2">
-                        <div class="timeline2-panel">
-                            <div class="timeline2-body">
-                                <p class="timeline2-tittle">Visualización interactiva y descarga de datos</p>
+                    <li class="box">
+                        <div class="box-panel">
+                            <div class="box-body">
+                                <p class="box-tittle">Visualización interactiva y descarga de datos</p>
                             </div>
                         </div>
                     </li>
-                    <li class="timeline2">
-                        <div class="timeline2-panel">
-                            <div class="timeline2-body">
-                                <p class="timeline2-title">Consejo médico durante el proceso</p>
+                    <li class="box">
+                        <div class="box-panel">
+                            <div class="box-body">
+                                <p class="box-title">Consejo médico durante el proceso</p>
                             </div>
                         </div>
                     </li>
                 </ul>
-                <a href="#application" class="btn solicitar" role="button"><small><span class="light">Solicitar</span></small></a>
-                <a href="#technical" class="btn mas-info" role="button"><small><span class="light">+ Info</span></small></a>
+                <a href="#application" class="btn solicitar" role="button"><span class="light">Solicitar</span></a>
+                <a href="#technical" class="btn mas-info" role="button"><span class="light">+ Info</span></a>
             </div>
         </div>
     </section>
@@ -185,57 +180,57 @@
     </section>
     
     <!-- Image section -->
-    <section id="medical" class="container image-section">
+    <section id="medical" class="container-fluid medical-section">
         <div class="intro">
             <h2>Médicos y clínicas</h2>
             <p class="explain">Apoyamos a los profesionales sanitarios en la práctica de la<br> medicina preventiva, dándoles soporte para que ayuden a sus<br> pacientes a gestionar adecuadamente sus riesgos clínicos.</p>
         </div>        
         <div class="row">
             <div class="col col-lg-6 col-lg-offset-6 left-col">   
-                <ul class="timeline2">
-                    <li class="timeline2-inverted">
-                        <div class="timeline2-panel">
-                            <div class="timeline2-body">
-                                <p class="timeline2-title">Solicitud de análisis individuales o por lotes</p>
+                <ul class="box">
+                    <li class="box-inverted">
+                        <div class="box-panel">
+                            <div class="box-body">
+                                <p class="box-title">Solicitud de análisis individuales o por lotes</p>
                             </div>
                         </div>
                     </li>
-                    <li class="timeline2-inverted">
-                        <div class="timeline2-panel">
-                            <div class="timeline2-body">
-                                <p class="timeline2-title">Recogida de muestras sencilla</p>
+                    <li class="box-inverted">
+                        <div class="box-panel">
+                            <div class="box-body">
+                                <p class="box-title">Recogida de muestras sencilla</p>
                             </div>
                         </div>
                     </li>
-                    <li class="timeline2-inverted">
-                        <div class="timeline2-panel">
-                            <div class="timeline2-body">
-                                <p class="timeline2-title">Cuenta para gestionar todos sus pacientes</p>
+                    <li class="box-inverted">
+                        <div class="box-panel">
+                            <div class="box-body">
+                                <p class="box-title">Cuenta para gestionar todos sus pacientes</p>
                             </div>
                         </div>
                     </li>
-                    <li class="timeline2-inverted">
-                        <div class="timeline2-panel">
-                            <div class="timeline2-body">
-                                <p class="timeline2-tittle">Acceso interactivo y descarga de informes</p>
+                    <li class="box-inverted">
+                        <div class="box-panel">
+                            <div class="box-body">
+                                <p class="box-tittle">Acceso interactivo y descarga de informes</p>
                             </div>
                         </div>
                     </li>
-                    <li class="timeline2-inverted">
-                        <div class="timeline2-panel">
-                            <div class="timeline2-body">
-                                <p class="timeline2-title">Soporte técnico</p>
+                    <li class="box-inverted">
+                        <div class="box-panel">
+                            <div class="box-body">
+                                <p class="box-title">Soporte técnico</p>
                             </div>
                         </div>
                     </li>
                 </ul>
-                <a href="#application" class="btn solicitar" role="button"><small><span class="light">Solicitar</span></small></a>
-                <a href="#technical" class="btn mas-info" role="button"><small><span class="light">+ Info</span></small></a>
+                <a href="#application" class="btn solicitar" role="button"><span class="light">Solicitar</span></a>
+                <a href="#technical" class="btn mas-info" role="button"><span class="light">+ Info</span></a>
             </div>
     </section>
 
     <!-- Form Section -->
-    <section id="application" class="container apply-section">
+    <section id="application" class="container-fluid apply-section">
         <div class="row">
             <div class="col-lg-6 col-lg-offset-3">
                 <form>
@@ -258,7 +253,7 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <div class="btn-form form-group">
-                        <a href="#" class="btn enviar" role="button"><small><span class="light">Enviar</span></small></a>
+                        <a href="#" class="btn enviar" role="button"><span class="light">Enviar</span></a>
                     </div>
                 </form>
             </div>
@@ -267,19 +262,19 @@
 
 
     <!-- Schedule Section -->
-    <section id="distribution" class="container schedule-section2 text-center">
+    <section id="distribution" class="container-fluid distributors-section">
         <div class="intro">
             <h2>Distribuidores del sector sanitario</h2>
                 <p>Como innovadores en genética para el consumidor,<br> estamos abiertos a asociaciones con colaboradores<br> y distribuidores del sector sanitario.</p>
                 <p>Le ayudamos a proveer a sus clientes de <br>soluciones para acceder a las últimas <br>tecnologías de secuenciación y análisis genéticos.</p>
                 <p>Disponga de servicios de medicina de precisión <br>líderes en la industria de la salud.</p>
-                <a href="#application" class="btn solicitar" role="button"><small><span class="light">Solicitar</span></small></a>
-                <a href="#technical" class="btn mas-info" role="button"><small><span class="light">+ Info</span></small></a>
+                <a href="#application" class="btn solicitar" role="button"><span class="light">Solicitar</span></a>
+                <a href="#technical" class="btn mas-info" role="button"><span class="light">+ Info</span></a>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+    <section id="contact" class="container-fluid content-section">
         <div class="row">
             <h2>Contacta con nosotros</h2>
             <div class="col-lg-6 mapa-col"> 
@@ -313,7 +308,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; 2017 MINGO Bioinformatics</p>
+            <p>Copyright &copy; 2017 <span class="lato"> MINGO </span>bioinformatics</p>
         </div>
     </footer>
 
@@ -339,7 +334,35 @@
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
 
-
+    <script type="text/javascript">
+    $(document).ready(function() {
+        const getY = id => document.getElementById(id).getBoundingClientRect().y
+        const removeAll = () => Object.values($('.navbar-nav')[1].children).forEach( e => e.removeAttribute('class'))
+        const a = $('.navbar-nav')[1].children[0]
+        const b = $('.navbar-nav')[1].children[1]
+        const c = $('.navbar-nav')[1].children[2]
+        const d = $('.navbar-nav')[1].children[3]
+        let curr = null
+        const setCurrAndActivate = (el) => {
+            removeAll()
+            curr=el
+            el.setAttribute('class', 'active')
+        }
+        window.addEventListener('scroll', function(e) {
+            let partiY = getY('particular')
+            let medicY = getY('medical')
+            let distrY = getY('distribution')
+            parti = partiY >=0 && partiY < 120
+            medic = medicY >=0 && medicY < 120
+            distr = distrY >=0 && distrY < 120
+            if ( parti ) setCurrAndActivate(a)
+                if ( medic ) setCurrAndActivate(b)
+                    if ( distr ) setCurrAndActivate(d)
+                        console.log({curr, parti, medic, distr})
+        })
+        
+    })
+    </script>
 
 </body>
 
