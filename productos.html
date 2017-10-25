@@ -64,9 +64,14 @@
 	                    <li class="active">
 	                        <a href="./productos.html">Productos</a>
 	                    </li>
-	                    <li>
-	                        <a href="./servicios.html">Servicios</a>
-	                    </li>                   
+	                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="./servicios.html" onclick="window.location.href='./servicios.html'">Servicios</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./servicios.html#particular">Particulares</a></li>
+                            <li><a href="./servicios.html#medical">Médicos</a></li>
+                            <li><a href="./servicios.html#distribution">Distribuidores</a></li>
+                        </ul>
+                    	</li>                  
 	                    <li>
 	                        <a href="./about.html">Sobre nosotros</a>
 	                    </li>
@@ -219,7 +224,7 @@
 
 							</ul>
 						</div>
-						<div class="col-lg-3 img-col">
+						<div class="col-lg-3 img-col hidden-xs hidden-sm hidden-md">
 							<div class="row"><img src="img/Iconos_servicios/dna.png" class="fluid-img adn-img"></img></div>
 		                	<div class="row"><img src="img/Iconos_servicios/download.png" class="fluid-img arrow-img"></img></div>
 		                	<div class="row"><img src="img/Iconos_servicios/analytics.png" class="fluid-img pc-img"></img></div>
@@ -234,7 +239,7 @@
 				<h2>Genoma completo</h2>
 			</div>
 			<div class="row">
-				<div class="col-lg-3">
+				<div class="col-lg-3 hidden-xs hidden-sm hidden-md">
 					<img src="./img/Genoma_Vertical.png" ></img>
 				</div>
 				<div class="col-lg-8 text-left" >
@@ -259,7 +264,7 @@
 					<p>El exoma humano consiste en, aproximadamente, 180.000 exones que constituyen cerca del 1% del total del genoma. </p>
 					<a href="#application" class="btn solicitar" role="button"><span class="light">Solicitar</span></a>
 				</div>
-				<div class="col-lg-3" >
+				<div class="col-lg-3 hidden-xs hidden-sm hidden-md" >
 					<img src="./img/Exoma_Vertical.png" ></img>
 				</div>
 			</div>
@@ -271,7 +276,7 @@
 				<h2>Análisis personalizados</h2>
 			</div>
 			<div class="row">
-				<div class="col-lg-3">
+				<div class="col-lg-3 hidden-xs hidden-sm hidden-md">
 					<img src="./img/Estudios_Vertical.png" ></img>
 				</div>
 				<div class="col-lg-8 text-left" >

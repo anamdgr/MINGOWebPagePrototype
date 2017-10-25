@@ -12,16 +12,35 @@
   width: 100%;
 }
 .mapa-col {
-  padding: 20px 60px 0px 60px;
+  padding: 30px;
 }
 .mapa-texto {
   margin-top: -20px;
   padding: 0px;
   color: #677B95 !important;
 }
+.mapa-texto p{
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+.mapa-texto a{
+  color: #008080;
+}
+.mapa-texto a:hover{
+  color: #42DCA3;
+}
+.mapa-texto .banner-social-buttons a:hover {
+  color: white;
+  background-color: #008080;
+}
+
 .mingo-logo-inverso {
   width: 300px;
-  margin: -30px;
+  margin: -70px -40px -40px -40px;
+}
+.aof-logo {
+  width: 500px;
+  margin-top: 40px;
 }
 
 @media (min-width: 767px) {
