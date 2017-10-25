@@ -1,0 +1,17 @@
+.apply-section {
+	padding-top: 50px;
+	background-color: #F7F8F8;
+  	width: 100%;
+}
+
+.apply-section .page-header {
+	margin: 50px 100px 0 100px;
+}
+
+.apply-section .form-row {
+	padding-top: 50px;
+}
+
+.apply-section form label{
+	color: #008080;
+}

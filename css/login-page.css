@@ -18,6 +18,15 @@
   margin-top: 50px;
 }
 
+.forgot-pw a{
+  color: #C70039 !important;
+  font-size: 18px;
+}
+
+.forgot-pw a:hover{
+  color: #900C3F !important;
+}
+
 /***** Media queries *****/
 
 @media (max-width: 767px) {

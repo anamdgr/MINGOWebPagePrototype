@@ -6,7 +6,7 @@
 }
 .comparative-section {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 50px;
   background-color: white;
 }
@@ -16,8 +16,7 @@
 }
 .comparative-section .col-lg-4 {
   text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 4px;
 }
 .comparative-section .btn {
   background-color: #008080;

@@ -87,6 +87,10 @@
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
 }
+
+.content-section {
+  padding: 80px;
+}
 .comparative-section {
   width: 100%;
   padding-top: 100px;
@@ -143,7 +147,7 @@
 
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 80px;
+    padding-top: 100px;
   }
   .promo-section {
     padding: 80px 0;

@@ -61,11 +61,21 @@
                     <li>
                         <a href="./login.html">Login</a>
                     </li>
-                    <li>
-                        <a href="./productos.html">Productos</a>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="./productos.html">Productos</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./productos.html#genoma">Genoma</a></li>
+                            <li><a href="./productos.html#exoma">Exoma</a></li>
+                            <li><a href="./productos.html#analisis">Paneles</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="./servicios.html">Servicios</a>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="./servicios.html">Servicios</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./servicios.html#particular">Particulares</a></li>
+                            <li><a href="./servicios.html#medical">Médicos</a></li>
+                            <li><a href="./servicios.html#distribution">Distribuidores</a></li>
+                        </ul>
                     </li>                   
                     <li>
                         <a href="./about.html">Sobre nosotros</a>
@@ -101,28 +111,18 @@
         </div>
     </header>
 
-    <!-- Intro Section -->
-    <section id="comparative" class="container-fluid comparative-section">
-        <h2>¿Cuanta información sobre tu ADN necesitas?</h2>
+    <!-- About Section -->
+    <section id="about" class="container-fluid content-section">
         <div class="row">
-            <div class="col-lg-4">
-                <img class="fluid-img compare-images" src="./img/GenomaCompleto.png"></img>
-                <h3>Genoma Completo</h3>
-                <p><a class="btn btn-secondary" href="./productos.html" role="button">Saber más</a></p>
-            </div>
-            <div class="col-lg-4">
-                <img class="compare-images" src="./img/ExomaCompleto.png"></img>
-                <h3>Exoma Completo</h3>
-                <p><a class="btn btn-secondary" href="./productos.html" role="button">Saber más</a></p>
-            </div>
-            <div class="col-lg-4">
-                <img class="compare-images" src="./img/EstudiosPersonalizados.png"></img>
-                <h3>Análisis personalizdos</h3>
-                <p><a class="btn btn-secondary" href="./productos.html" role="button">Saber más</a></p>
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>¿Qué hacemos?</h2>
+                <p>Realizamos análisis de genoma completo, exoma completo y otros estudios más específicos para poner en práctica las increíbles aplicaciones de la genética en el ámbito de la medicina preventiva y mejorar de la calidad de vida de nuestros clientes.</p>
+                <p>Ofrecemos un servicio fiable, de calidad y duradero. Para ello, hemos diseñado una plataforma online en la que podrás gestionar y acceder a toda tu información genética, compartirla con tu médico y recibir actualizaciones sobre la misma para toda la vida.</p>
             </div>
         </div>
     </section>
-    
+
+        
     <!-- Schedule Section -->
     <section id="schedule" class="container-fluid schedule-section text-center">
         <div class="row">
@@ -168,15 +168,29 @@
             </div>
         </div>
     </section>
-    <!-- About Section -->
-    <section id="about" class="container-fluid content-section">
+
+    <!-- Coparative Section -->
+    <section id="comparative" class="container-fluid comparative-section">
+        <h2>¿Cuanta información puedes tener?</h2>
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 content-col">
-                <h2>¿Qué hacemos?</h2>
-                <p>Realizamos análisis genéticos tanto de exoma como de genoma para darte toda la información que necesitas sobre ti mismo. Además, actualizamos esa información durante toda tu vida para que tengas acceso a todos los avances en salud.</p>
+            <div class="col-lg-4">
+                <img class="fluid-img compare-images" src="./img/GenomaCompleto.png"></img>
+                <h3>Genoma Completo</h3>
+                <p><a class="btn btn-secondary" href="./productos.html" role="button">Saber más</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img class="compare-images" src="./img/ExomaCompleto.png"></img>
+                <h3>Exoma Completo</h3>
+                <p><a class="btn btn-secondary" href="./productos.html" role="button">Saber más</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img class="compare-images" src="./img/EstudiosPersonalizados.png"></img>
+                <h3>Análisis personalizados</h3>
+                <p><a class="btn btn-secondary" href="./productos.html" role="button">Saber más</a></p>
             </div>
         </div>
     </section>
+
 
     <!-- Promo Section -->
     <section id="promo" class="container-fluid promo-section text-center">
